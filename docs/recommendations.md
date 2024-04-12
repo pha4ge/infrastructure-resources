@@ -117,4 +117,61 @@ Responsibilities for cyber incident management, how one detects and responds to 
 
 ## Results
 
-TO DO: the rest of this doc
+To illustrate how different questions (who, what, where) may be answered, we describe six real world implementations (vignettes) of bioinformatics infrastructure to contrast the many benefits and constraints. To compare them, we have outlined eight dimensions based on these broader questions (See methods). These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). 
+
+The six implementations are summarised in Table 1 with details in Supplementary Materials, and the summary of assessment of these are presented in Figure 3. The detailed scoring for each vignettes is in Supplementary Table 1. 
+
+INSERT TABLE 1
+
+INSERT FIGURE 3
+
+> [!CONFUSING - the following sections lacks fluff to explain context]
+
+The INRB Laptop example as a local installation on a single device, with the single advantage that it does not require external resources to run, which was important as one of the key motivating constraints was slow or unreliable internet and power where it was deployed. INRB Laptop, in being self contained and self managed, shifted all management onto the operator and was limited to the resources on the physical device, which scored poorly for criteria such as scalability  and flexibility. 
+
+In the survey of real world implementations, only the laptop example was consistently ranked the lowest with limited scalability, flexibility and structures (like access control). 
+
+Centralised on premises solutions (Nextflow - Ibadan, IRIDA, HPC) had different systems for data provenance and user control but were adequate. Adding a web front end application (IRIDA) provided easy for users without additional complexity for administration. Indeed, the key complication for on premises solutions was the provisioning of the job processing systems, which required expert knowledge. Notably the HPC example uses a traditional HPC arrangement that was married to the HPC hardware making it difficult to switch to other resources for data processing (such as cloud) to scale up or down the resource.  There were different motivations for the different implementations, for instance the HPC on premises example was to utilise existing HPC resources while the IRIDA NVI example was to respond to data privacy and protection requirements. 
+
+Use of cloud platforms (Terra and UseGalaxy) were motivated by the lack of access to hardware or expertise to run such hardware required for bioinformatics analysis. Usegalaxy was fairly rigid with the options that were provided while there was more flexibility in the Terra platform. Conversely these platforms, being off-site, required a sufficient internet connection for initial upload of generated data.  As pre-existing platforms available to the public, these were ready for use for any lab with some initial user training and setup.
+
+## Discussion
+
+We have found that using structured workflows and deliberate infrastructure can provide portability, auditability, ease-of-use for non-specialists and increase capability. Our discussion anticipates the use of routine genomic data and the scale that implies. We expect this infrastructure to be a long standard resource and will need to have a degree of being future proof. Thus, we present this technical document to help labs shape a strategy for designing, implementing, and maintaining a compute infrastructure that meets their analytic needs.
+
+### Context specific considerations
+
+We note that implementations were partially motivated by scenario specific considerations. The first consideration would be whether there is a pre-existing infrastructure a lab should or must utilise. If there are existing solutions that can be used, continued and adapted use of that infrastructure is a very likely option. However, the issues, as described below (sample volume, finances, regulatory issues, etc) should be considered before committing to an existing solution. If there are outside factors dictating the use of an existing infrastructure, it is advisable to evaluate and describe the appropriateness of the existing solutions to ensure that all parties are aware of the actual costs that would be involved. See questions in the Subgrantees document for more information on using existing infrastructures.
+
+The second consideration would be sample volume. The number of samples to be analysed within a defined period may determine how much resources are invested in the setup. An institution that will analyse 500-1000 isolates per year most likely needs a different setup than the one that will analyse 1000’s of samples. A bigger operation will require more resources, more up front design and development of the process, and more standardisation of both processes and analyses. A smaller operation might however choose to either co-opt other existing solutions, or to outsource the process to someone with a larger setup, i.e. most likely go for a SaaS like solution.
+
+The third consideration is that of available resources, both human and financial. Significant skills and knowledge is required to set up and run such systems. Some institutions have people inhouse that can run the setup, or learn how to do it, while other institutions rather have financial resources and may choose to use those funds to outsource the setup. This factor may to a significant degree dictate what kind of infrastructure level the institution chooses to go for. If there are inhouse human resources, an on-prem or an IaaS solution may be selected, while if not, an outsourced PaaS or SaaS solution might be more cost effective. As a general consideration, if considerable flexibility in the system is needed, it will be more efficient and cost effective to have the necessary competences inhouse which will increase the speed of communication and help ensure that there is no direct financial cost associated with introducing modifications than to use a purely vendored solution.
+
+A fourth consideration would be any legal or regulatory issues that may affect the infrastructure setup. It is not uncommon that data associated with humans can have strict regulatory demands put on them. One of the more well known would be the rules regulating information about EU citizens, where the GDPR rules applies to any entity in the world who processes said information. In such situations, it may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are familiar with how to address such requirements.
+
+[!FIX LATER]
+
+## LIMITATIONS / out of scope.
+TO DO There are other considerations outside the scope of this document, that include …  all the small stuff we have no specific section about, such as backup.
+Several other considerations are beyond the scope of this document, including….
+
+In all cases, policies and governance covering resource usage and access need to be in place in advance.
+For example, working with a 3rd party vendor hosting SaaS, the responsibilities on governance may be delegated via contracts/service agreement. These may include: 
+- Availability requirements (such as disaster management and back up)
+- Incident management (in case of a cyber event)
+- Data management (such as data deletion policy)
+- Privacy Impact Assessment
+- Security Threat Assessment
+- Penetration test
+- Security vulnerability scan
+- Clinical data integration
+  
+Please note that the solutions and technologies included in this document are an attempt to highlight commonly used solutions and best practice principles, based on the opinions of this working group, captured at this moment in time. 
+
+## Conclusion
+
+Bioinformatics software is a diverse and continually evolving ecosystem of pipelines and similarly, there are a variety of computing infrastructure solutions for pathogen genomics labs. We have described vignettes of a small representative set of successful implementations to illustrate common themes and diverse approaches.
+
+The key element that highly ranked compute infrastructure solutions have in common is that they provide a means for laboratory users to run containerised bioinformatic pipelines. This capability is now a minimum requirement for compute infrastructure in pathogen genomics labs, as it empowers them with increased tool portability (they can leverage the community’s ecosystem of tools already written in a standardised bioinformatic workflow language compatible with their infrastructure) and increased user accessibility (ease of use for non-computational users provides a far broader reach to more staff in more labs), ultimately allowing such labs to get new analyses up and running in days. 
+
+Ultimately, the primary purpose of computing infrastructure is to manage data and facilitate bioinformatics analyses regularly performed by staff and researchers in pathogen genomics labs. This is not achieved by CPU cores and terabytes of storage alone, but requires the implementation of workflow execution engines, data management systems, system configuration, and the requisite human resources to maintain this infrastructure, with the end goal of ensuring that their laboratory users are able to effectively manage and analyse their genomic data.
