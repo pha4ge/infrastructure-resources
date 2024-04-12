@@ -64,11 +64,13 @@ Developing computing infrastructure depends on a number of considerations, many 
 
   **How much does the infrastructure try and solve:** which parts of the pathogen bioinformatics analysis solution do you want to be responsible for? (Figure 2)
 
-**TO DO: insert Figure 1 here**
+<img width="60%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/dd54673d-685c-4e11-a8fd-14f992e39226">
+
+**Figure 1: Description of physical infrastructure and capabilities of each solution.** A) The extent of portability to other platforms beyond the initial development environment. B) Additional features natively supported by each physical infrastructure. 
 
 In many situations, it might be natural to start with defining the infrastructure that the analyses should be run in. However, there are dependencies between how the analyses are run and the infrastructure that supports those analyses. Certain analyses can be more well adapted to specific setups than others. Thus starting with how the analysis will be performed, and determining the infrastructure that best supports that analysis, can be highly beneficial.
 
-### Where does it run: Physical layers of computing
+### Where the analysis is run: Physical layers of computing
 
 There are a multitude of options for bioinformatic computing infrastructure deployment. The best solution will depend on the specific constraints imposed on a laboratory by their Central IT, Procurement, and other institutional entities. It is important to be aware of the range of solutions available (and unavailable) to make an informed decision. These solutions can be categorised by their degree of abstraction, i.e. the amount of infrastructure that is managed by the user or is deferred to others (Figure 2). Most solutions will belong to one of three major tiers, with SaaS representing the higher abstraction/deferred tier, and IaaS the lowest abstraction/deferred tier:
 
@@ -78,26 +80,33 @@ There are a multitude of options for bioinformatic computing infrastructure depl
 
 All of these solutions may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
 
+The choice of a particular platform influences; **External access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers; **Flexibility**, which includes the compatibility for scaling out onto cloud computing or similar platforms; **Scalability**, in terms of the ease of scalability to include additional users and the scalability for changing data volume.
+
 ![service-diagram-20211116-dp](https://github.com/pha4ge/infrastructure-resources/assets/8513746/d0c66464-28ba-4467-8f20-b0a39cc65d5c)
 **Figure 2: Scope of Responsibility** - the scope of what different solutions attempt to solve for the users and admins. All infrastructure components (bottom of figure) need to be addressed by some combination of the end-user, system admins, or an external party. The degree to which responsibility can be deferred to a third party depends on the solution chosen. For example, on the IaaS level, a research group will also need to provide their own solution for orchestrating infrastructure (including software installation, selecting and installing a pipeline executor and installing pipelines), which would be solved via SaaS. Thus, selecting a lower level of abstraction introduces additional flexibility with the burden of additional complexity for the users.
 
-### How does it run: Managing bioinformatic compute workflows
-
-**TO DO: add hyperlinks from gdoc to the below sections of text**
+### How the analysis is run: Managing bioinformatic compute workflows
 
 There is a minimum requirement of transparency and portability associated with public health protocols that transfers to genome analysis. In order to meet these requirements genome analysis should be run through containerised bioinformatic pipelines expressed in a bioinformatic workflow language [^Ahmed2021][^PipesVizSC2].
 
 [^PipesVizSC2]: PHA4GE Pipelines and Visualisations Working Group. Bioinformatics Solutions For SARS-CoV-2 Genomic Analysis. https://pha4ge.org/resource/bioinformatics-solutions-for-sars-cov-2-genomic-analysis/
 
-The specific workflow managers and workflow languages are continually evolving, but the resources mentioned above include WDL (Workflow Description Language), CWL (Common Workflow Language), Nextflow, and Galaxy. These languages have varying degrees of adoption and support in APIs and services defined by the Global Alliance for Genomics and Health (GA4GH). Labs may employ other workflow languages, such as Snakemake, Airflow, or Swift—these also allow for reproducible and replicable workflows, but may not be as portable in a genomics pipeline sharing ecosystem.
+The specific workflow managers and workflow languages are continually evolving, but the resources mentioned above include WDL (Workflow Description Language)[^WDL], CWL (Common Workflow Language)[^CWL], Nextflow[^DiTommaso2017], and Galaxy[^Galaxy]. These languages have varying degrees of adoption and support in APIs and services defined by the Global Alliance for Genomics and Health ([GA4GH](https://www.ga4gh.org/genomic-data-toolkit/)). Labs may employ other workflow languages, such as Snakemake, Airflow, or Swift—these also allow for reproducible and replicable workflows, but may not be as portable in a genomics pipeline sharing ecosystem.
 
-A pipeline sharing ecosystem is a platform (such as Dockstore, WorkflowHub.Eu or nf-core) that manages finding, versioning and sharing pipelines. Workflow execution software (such as the Nextflow runner) or platforms (such as Galaxy or Terra) can often automate selecting and downloading workflow pipelines from such systems, turning workflows into “apps” that can be easily installed and executed.
+[^WDL]: The OpenWDL Consortium. Workflow Description Language (WDL). 2012. OpenWDL. https://github.com/openwdl/wdl
+[^CWL]: Crusoe, Michael R., Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, and The CWL Community. 2014. Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language. Common Workflow Language. https://github.com/common-workflow-language/common-workflow-language
+[^DiTommaso2017]: Di Tommaso, Paolo, Maria Chatzou, Evan W. Floden, Pablo Prieto Barja, Emilio Palumbo, and Cedric Notredame. 2017. Nextflow Enables Reproducible Computational Workflows. Nature Biotechnology 35 (4): 316–19. https://doi.org/10.1038/nbt.3820
+[^Galaxy]: The Galaxy Community, Enis Afgan, Anton Nekrutenko, Bjórn A Grüning, Daniel Blankenberg, Jeremy Goecks, Michael C Schatz, et al. 2022. The Galaxy Platform for Accessible, Reproducible and Collaborative Biomedical Analyses: 2022 Update. Nucleic Acids Research 50 (W1): W345–51. https://doi.org/10.1093/nar/gkac247
+
+A pipeline sharing ecosystem is a platform (such as [Dockstore](https://dockstore.org/), [WorkflowHub.Eu](https://workflowhub.eu/) or [nf-core](https://nf-co.re/)) that manages finding, versioning and sharing pipelines. Workflow execution software (such as the Nextflow runner) or platforms (such as Galaxy or Terra) can often automate selecting and downloading workflow pipelines from such systems, turning workflows into “apps” that can be easily installed and executed.
 
 Workflow execution software (such as the Nextflow runner) or platforms (such as Galaxy or Terra) can often automate the import and execution of workflow pipelines from such ecosystems. SaaS solutions often employ such pipelines under the hood, but only present a curated set to its users.
 
 Ultimately, the choices made here directly impact the ecosystem of easily available bioinformatic pipelines readily available to end users.
 
-### Managing data flow
+The choice in workflow management approach influences; **Future proofing**, which extends to whether workflows can be added (or extended) to meet future requirements, and includesd module extension to add other functionality; **Ease of use (for administrators)**, such as ease to deploy, ease of maintenance and administration, and ease to coordinate with central IT; and **Ease of use (for users)**, in particular for non-computational-specialists (i.e. GUI interfaces).
+
+### How data flows: Managing data flow
 
 Data management involves developing practices for storing, controlling access to, versioning, archiving and sharing data extracted from various points in the data flow. Institutions should document these processes, for example through recording analysis provenance data and collecting data management plans at the time of data ingestion.
 
@@ -105,9 +114,9 @@ Data management processes ideally integrate with authentication and authorizatio
 
 Data flows through the system from raw data (produced by instruments like DNA sequencers) and metadata (e.g. date of sample collection) through analysis workflows to final analysis results. The decision about what data counts as an analysis results is somewhat user or pipeline driven but these can be divided broadly into two categories: results that contribute to the analysis of data (for example BAM files that might be examined to interpret a sequence assembly) and results that are ultimately published or archived and constitute conclusions generated from the data. These final results include both genomic data (e.g. consensus genomes or per sample variant summaries) and also analysis outputs such as charts and phylogenies. Typically, raw data is at least an order of magnitude larger than analysis outputs.
 
-In summary, data flow can be described as passing through stages of ingestion, storage processing and delivery (of results, reports and visualisations). Compute infrastructure planning needs to accommodate this data flow.
+In summary, data flow can be described as passing through stages of ingestion, storage processing and delivery (of results, reports and visualisations). Compute infrastructure planning needs to accommodate this data flow, while simultaneously satisfying requirements for confidentiality, integrity and accessibility.
 
-### Managing user accounts, identity and access
+### Who has access: Managing user accounts, identity and access
 
 User identity and access management (IAM) is a key requirement of IT infrastructure which involves managing user authentication, life cycle and the access granted to users (or groups) to data or compute resources as well as monitoring and auditability of user activity. The choices a lab makes, with perhaps its limited domain expertise, around implementation of their compute infrastructure have significant implications that must be considered early on, and in most cases, will require coordination with institutional central IT as well as any external providers that are utilised. In many cases, the processing of pathogen genomic data, and user access considerations, would need to be risk assessed and agreed with organisational information governance.
 
@@ -119,13 +128,17 @@ Responsibilities for cyber incident management, how one detects and responds to 
 
 To illustrate how different questions (who, what, where) may be answered, we describe six real world implementations (vignettes) of bioinformatics infrastructure to contrast the many benefits and constraints. To compare them, we have outlined eight dimensions based on these broader questions (See methods). These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). 
 
-The six implementations are summarised in Table 1 with details in Supplementary Materials, and the summary of assessment of these are presented in Figure 3. The detailed scoring for each vignettes is in Supplementary Table 1. 
+The six implementations are summarised in **Table 1** with details in Supplementary Materials, and the summary of assessment of these are presented in **Figure 3**. The detailed scoring for each vignettes is in **Supplementary Table 1**. 
 
-INSERT TABLE 1
+> [!WARNING]
+> TO DO: INSERT TABLE 1
 
-INSERT FIGURE 3
+<img width="75%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/212524f8-2c1b-4314-ad50-eaf452054954">
 
-> [!CONFUSING - the following sections lacks fluff to explain context]
+**Figure 3:** Comparison of six real world bioinformatics infrastructure with key dimensions.
+
+> [!WARNING]
+> CONFUSING - the following sections lacks fluff to explain context
 
 The INRB Laptop example as a local installation on a single device, with the single advantage that it does not require external resources to run, which was important as one of the key motivating constraints was slow or unreliable internet and power where it was deployed. INRB Laptop, in being self contained and self managed, shifted all management onto the operator and was limited to the resources on the physical device, which scored poorly for criteria such as scalability  and flexibility. 
 
