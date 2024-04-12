@@ -24,6 +24,8 @@ ORCIDs? (good idea but probably depends on journal)
  <summary> Document Changelog</summary>
  - 2024-01-30:
     - Move to github MD from gdoc
+ - 2024-04-12:
+    - DP & KN more work and formatting
 </details>
 
 ## Abstract
@@ -128,7 +130,7 @@ Responsibilities for cyber incident management, how one detects and responds to 
 
 To illustrate how different questions (who, what, where) may be answered, we describe six real world implementations (see vignettes for more) of bioinformatics infrastructure to contrast the many benefits and constraints that come with different solutions. To compare them, we have outlined eight dimensions based on these broader questions (See methods). These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). 
 
-The six implementations are summarised in Table 1 with details in Supplementary Materials. Each solution was evaluated by competent practitioners with experience with the solution. The detailed scoring for each vignettes is in Supplementary Table 1. A summary of the assessment of the solutions are presented in Figure 3. 
+The six implementations are summarised in **Table 1** with details in Supplementary Materials. Each solution was evaluated by competent practitioners with experience with the solution. The detailed scoring for each vignettes is in **Supplementary Table 1**. A summary of the assessment of the solutions are presented in **Figure 3**. 
 
 > [!WARNING]
 > TO DO: INSERT TABLE 1
@@ -140,9 +142,11 @@ The six implementations are summarised in Table 1 with details in Supplementary 
 > [!WARNING]
 > CONFUSING - the following sections lacks fluff to explain context
 
-As is evident from Figure 3,  only the laptop example was consistently scored the lowest with limited scalability, flexibility and structures (like access control). 
+As is evident from **Figure 3**,  only the laptop example was consistently scored the lowest with limited scalability, flexibility and structures (like access control). 
 The INRB Laptop is an example of a local installation on a single device that has the single advantage that it does not require external resources to run. This independence was the key motivating factor for the people who chose to use this solution, due to slow or unreliable internet and power where it was deployed. The INRB Laptop in being self contained and self managed, in addition shifted all management onto the operator and was limited to the resources on the physical device.
-> [!current working site]
+
+> [!WARNING]
+> current working site
 
 Centralised on premises solutions (Nextflow - Ibadan, IRIDA, HPC) had different systems for data provenance and user control but were adequate. Adding a web front end application (IRIDA) provided easy for users without additional complexity for administration. Indeed, the key complication for on premises solutions was the provisioning of the job processing systems, which required expert knowledge. Notably the HPC example uses a traditional HPC arrangement that was married to the HPC hardware making it difficult to switch to other resources for data processing (such as cloud) to scale up or down the resource.  There were different motivations for the different implementations, for instance the HPC on premises example was to utilise existing HPC resources while the IRIDA NVI example was to respond to data privacy and protection requirements. 
 
@@ -162,9 +166,10 @@ The third consideration is that of available resources, both human and financial
 
 A fourth consideration would be any legal or regulatory issues that may affect the infrastructure setup. It is not uncommon that data associated with humans can have strict regulatory demands put on them. One of the more well known would be the rules regulating information about EU citizens, where the GDPR rules applies to any entity in the world who processes said information. In such situations, it may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are familiar with how to address such requirements.
 
-[!FIX LATER]
+> [!WARNING]
+> FIX LATER
 
-## LIMITATIONS / out of scope.
+## LIMITATIONS / out of scope
 TO DO There are other considerations outside the scope of this document, that include …  all the small stuff we have no specific section about, such as backup.
 Several other considerations are beyond the scope of this document, including….
 
