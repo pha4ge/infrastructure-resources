@@ -132,8 +132,16 @@ To illustrate how different questions (who, what, where) may be answered, we des
 
 The six implementations are summarised in **Table 1** with details in Supplementary Materials. Each solution was evaluated by competent practitioners with experience with the solution. The detailed scoring for each vignettes is in **Supplementary Table 1**. A summary of the assessment of the solutions are presented in **Figure 3**. 
 
-> [!WARNING]
-> TO DO: INSERT TABLE 1
+| Lab | Infrastructure | Where | Scope | How | Data sharing | ID & Auth |
+| --- | --- | --- | --- | --- | --- | --- |
+| INRB (DRCongo) | Laptop / field bioinformatics | Laptop | IaaS | ARTIC/Python | Local | Local to laptop |
+| SANBI, UWC (S. Africa) | On prem HPC | HPC | IaaS | Nextflow & Galaxy | via HPC sysadmins | FreeIPA directory server |
+| U. Ibadan (Nigeria) | Seqera Tower | Cloud | PaaS | Nextflow | via Amazon S3 | Amazon IAM |
+| US PHLs w/Theiagen | Terra | Cloud | PaaS | WDL | via Terra workspaces | Google or Microsoft oauth |
+| GenomeTrakr labs (FDA CFSAN, etc) | GalaxyTrakr | Cloud | PaaS | Galaxy | via Galaxy histories | GalaxyTrakr server login |
+| NVI (Norway) | IRIDA | HPC | SaaS | Galaxy | via IRIDA project | IRIDA server login |
+
+**Table 1:** Bioinformatics infrastructure from surveyed labs.
 
 <img width="75%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/212524f8-2c1b-4314-ad50-eaf452054954">
 
