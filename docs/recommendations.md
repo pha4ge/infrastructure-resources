@@ -22,9 +22,10 @@ ORCIDs? (good idea but probably depends on journal)
 
 <details>
  <summary> Document Changelog</summary>
- - 2024-01-30:
+
+- 2024-01-30:
     - Move to github MD from gdoc
- - 2024-04-12:
+- 2024-04-12:
     - DP & KN more work and formatting
 </details>
 
