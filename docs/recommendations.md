@@ -59,6 +59,8 @@ Developing computing infrastructure depends on a number of considerations, many 
 [^Parkhill2010]: Parkhill J, Birney E, Kersey P. Genomic information infrastructure after the deluge. Genome Biol. 2010. Available: http://genomebiology.com/content/11/7/402
 [^Raza2016]: Raza S, Luheshi L. Big data or bust: realizing the microbial genomics revolution. Microb Genom. 2016;2: e000046. https://doi.org/10.1099/mgen.0.000046
 
+  **How much does the infrastructure try and solve:** which parts of the pathogen bioinformatics analysis solution do you want to be responsible for?
+
   **Where the analysis is run:** The physical infrastructure, hardware components and the degree of abstraction for the user. For instance, analyses may run on a laptop, a server, a high performance computing (HPC) cluster, or remotely on cloud compute resources. This will determine the scale at which the analyses can be run and the degree of abstraction for the user.
 
   **How the analysis is run:** The management of analytics workflows or “bioinformatic pipelines.” These might be implemented as a series of command-line scripts or more formal containerised workflow managers (e.g. Snakemake, NextFlow, Workflow Description Language). This will determine the level to which analyses are usable, reusable, portable and reproducible.
@@ -67,9 +69,7 @@ Developing computing infrastructure depends on a number of considerations, many 
 
   **Who has access:** This encompasses identity and access management, and includes how users are authenticated and authorised to access data. This can be managed by associating users with organisations, projects, and roles. Common defined roles include end users and those with elevated permissions to assist with administration and support.
 
-  **How much does the infrastructure try and solve:** which parts of the pathogen bioinformatics analysis solution do you want to be responsible for?
-
-### Where the analysis is run: Physical layers of computing
+### How much does the infrastructure try and solve: Layers of concern
 
 There are a multitude of options for bioinformatic computing infrastructure deployment. The best solution will depend on the specific constraints imposed on a laboratory by their Central IT, Procurement, and other institutional entities. It is important to be aware of the range of solutions available (and unavailable) to make an informed decision. These solutions can be categorised by their degree of abstraction, i.e. the amount of infrastructure that is managed by the user or is deferred to others (Figure 1). Most solutions will belong to one of three major tiers, with SaaS representing the higher abstraction/deferred tier, and IaaS the lowest abstraction/deferred tier:
 
@@ -77,12 +77,16 @@ There are a multitude of options for bioinformatic computing infrastructure depl
  - **Platform as a Service (PaaS)** - User brings data and pipelines. All hardware resources and data are managed by others.
  - **Infrastructure as a Service (IaaS)** - User brings data, pipelines, operating system around pipeline execution and management software. While IaaS is often associated with cloud-hosted virtual machines, we are using the term here to describe all configurations that are fully configured by the user.
 
-All of these solutions may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
-
-The choice of a particular platform influences; **External access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers; **Flexibility**, which includes the compatibility for scaling out onto cloud computing or similar platforms; **Scalability**, in terms of the ease of scalability to include additional users and the scalability for changing data volume.
+The choices here are somewhat orthogonal to other concerns about where the analysis is run and how data flows. However, the choice of a particular platform will influence: **External access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers; **Flexibility**, which includes the compatibility for scaling out onto cloud computing or similar platforms; **Scalability**, in terms of the ease of scalability to include additional users and the scalability for changing data volume.
 
 ![service-diagram-20211116-dp](https://github.com/pha4ge/infrastructure-resources/assets/8513746/d0c66464-28ba-4467-8f20-b0a39cc65d5c)
 **Figure 1: Scope of Responsibility** - the scope of what different solutions attempt to solve for the users and admins. All infrastructure components (bottom of figure) need to be addressed by some combination of the end-user, system admins, or an external party. The degree to which responsibility can be deferred to a third party depends on the solution chosen. For example, on the IaaS level, a research group will also need to provide their own solution for orchestrating infrastructure (including software installation, selecting and installing a pipeline executor and installing pipelines), which would be solved via SaaS. Thus, selecting a lower level of abstraction introduces additional flexibility with the burden of additional complexity for the users.
+
+### Where the analysis is run: Physical location of computing
+
+may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
+
+TO DO: add more text?
 
 ### How the analysis is run: Managing bioinformatic compute workflows
 
