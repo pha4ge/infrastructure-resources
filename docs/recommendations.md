@@ -6,7 +6,7 @@ Authors (order TBD): Daniel Park, Joel Sevinsky, Kelsey Florek, Nabil-Fareed Ali
 Affiliations (order TBD):
 1. [PvH] South African Medical Research Council Bioinformatics Unit, South African National Bioinformatics Institute, University of the Western Cape, Bellville, South Africa;
 1. [DP] Infectious Disease and Microbiome Program, Broad Institute of MIT and Harvard, MA, USA;
-1. [NFA -- update] Quadram Institute Bioscience, Norwich Research Park, Norwich, Norfolk, UK;
+1. [NFA] Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, UK;
 1. [JS] Theiagen Genomics, USA;
 1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada;
 1. [AU –- update] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
