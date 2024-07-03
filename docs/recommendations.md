@@ -112,10 +112,10 @@ The choice in workflow management approach influences; **Future proofing**, whic
 
 ### Where the analysis is run: Physical location of computing
 
-Solutions may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
+Infrastructural solutions may employ end-user hardware, shared on premises / collaborator hardware, commercially rented cloud hardware, or a mix of all three. Ultimately, your choices may be constrained or incentivized by extrinsic factors, such as the other four questions posed in this section, the resources or regulations associated with your institution, government, or collaborative consortium, or your projected future use cases.
 
 > [!WARNING]
-> TO DO -- write this section, doesn't have to be long
+> This section was just written recently and could probably use some proofing. It is short but is okay if it's short (it's short in the poster).
 
 
 ### How data flows: Managing data flow
