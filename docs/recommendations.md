@@ -61,13 +61,14 @@ Developing computing infrastructure depends on a number of considerations, many 
 
   **How much does the infrastructure try and solve:** which parts of the pathogen bioinformatics analysis solution do you want to be responsible for?
 
-  **Where the analysis is run:** The physical infrastructure, hardware components and the degree of abstraction for the user. For instance, analyses may run on a laptop, a server, a high performance computing (HPC) cluster, or remotely on cloud compute resources. This will determine the scale at which the analyses can be run and the degree of abstraction for the user.
-
   **How the analysis is run:** The management of analytics workflows or “bioinformatic pipelines.” These might be implemented as a series of command-line scripts or more formal containerised workflow managers (e.g. Snakemake, NextFlow, Workflow Description Language). This will determine the level to which analyses are usable, reusable, portable and reproducible.
+
+  **Where the analysis is run:** The physical infrastructure, hardware components and the degree of abstraction for the user. For instance, analyses may run on a laptop, a server, a high performance computing (HPC) cluster, or remotely on cloud compute resources. This will determine the scale at which the analyses can be run and the degree of abstraction for the user.
 
   **How data flows:** Where data comes from, where it is stored during analysis and where it goes. This includes how data is archived and presented (via dashboards, reporting, etc).
 
   **Who has access:** This encompasses identity and access management, and includes how users are authenticated and authorised to access data. This can be managed by associating users with organisations, projects, and roles. Common defined roles include end users and those with elevated permissions to assist with administration and support.
+
 
 ### How much does the infrastructure try and solve: Layers of concern
 
@@ -82,12 +83,6 @@ The choices here are somewhat orthogonal to other concerns about where the analy
 ![service-diagram-20211116-dp](https://github.com/pha4ge/infrastructure-resources/assets/8513746/d0c66464-28ba-4467-8f20-b0a39cc65d5c)
 **Figure 1: Scope of Responsibility** - the scope of what different solutions attempt to solve for the users and admins. All infrastructure components (bottom of figure) need to be addressed by some combination of the end-user, system admins, or an external party. The degree to which responsibility can be deferred to a third party depends on the solution chosen. For example, on the IaaS level, a research group will also need to provide their own solution for orchestrating infrastructure (including software installation, selecting and installing a pipeline executor and installing pipelines), which would be solved via SaaS. Thus, selecting a lower level of abstraction introduces additional flexibility with the burden of additional complexity for the users.
 
-### Where the analysis is run: Physical location of computing
-
-Solutions may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
-
-> [!WARNING]
-> TO DO -- write this section, doesn't have to be long
 
 ### How the analysis is run: Managing bioinformatic compute workflows
 
@@ -115,6 +110,14 @@ The choice in workflow management approach influences; **Future proofing**, whic
 **Figure 2: Description of physical infrastructure and capabilities of each solution.** A) The extent of portability to other platforms beyond the initial development environment. B) Additional features natively supported by each physical infrastructure. 
 
 
+### Where the analysis is run: Physical location of computing
+
+Solutions may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
+
+> [!WARNING]
+> TO DO -- write this section, doesn't have to be long
+
+
 ### How data flows: Managing data flow
 
 Data management involves developing practices for storing, controlling access to, versioning, archiving and sharing data extracted from various points in the data flow. Institutions should document these processes, for example through recording analysis provenance data and collecting data management plans at the time of data ingestion.
@@ -125,6 +128,7 @@ Data flows through the system from raw data (produced by instruments like DNA se
 
 In summary, data flow can be described as passing through stages of ingestion, storage processing and delivery (of results, reports and visualisations). Compute infrastructure planning needs to accommodate this data flow, while simultaneously satisfying requirements for confidentiality, integrity and accessibility.
 
+
 ### Who has access: Managing user accounts, identity and access
 
 User identity and access management (IAM) is a key requirement of IT infrastructure which involves managing user authentication, life cycle and the access granted to users (or groups) to data or compute resources as well as monitoring and auditability of user activity. The choices a lab makes, with perhaps its limited domain expertise, around implementation of their compute infrastructure have significant implications that must be considered early on, and in most cases, will require coordination with institutional central IT as well as any external providers that are utilised. In many cases, the processing of pathogen genomic data, and user access considerations, would need to be risk assessed and agreed with organisational information governance.
@@ -132,6 +136,7 @@ User identity and access management (IAM) is a key requirement of IT infrastruct
 This work will include agreeing the responsibilities for user and role management, something that is likely to be shared between labs and central IT. From the initial provisioning of new user access, to the management of their roles and access levels, review of access as well as the termination and offboarding—user access management is a continuous responsibility. An example of coordinated user management includes the use of the central active directory for accessing services within restricted environments instead of using an independent user management system for authentication and authorization per resource. If this is the case, the genomic compute infrastructure solution should be able to federate logins to other centrally managed (institutional Active Directory, OAuth, SSO) identity systems to facilitate the shared responsibility. Role and authorization management may also be shared. For example, labs may manage access to resources based on group memberships defined by central IT’s AD or group management system.
 
 Responsibilities for cyber incident management, how one detects and responds to data breaches or abuse of compute resources, need to be defined as well. While typically the domain of central IT, the use of a formalised external compute platform or service may shift the burden to the external parties that maintain these services. It is important, in all cases, that Central IT understand data flows and other digital activities being undertaken by a laboratory undertaking pathogen genomics analysis and processing, to ensure that security is properly joined up.  Many external services (such as Terra or DNAnexus) are routinely audited and provide recognized security and privacy certifications (e.g. FISMA, FedRAMP, NIST-800-53, GDPR/Privacy Shield)—if these are necessary, then this may require the use of such a vendor.
+
 
 ## Results
 
