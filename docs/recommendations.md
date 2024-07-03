@@ -84,9 +84,10 @@ The choices here are somewhat orthogonal to other concerns about where the analy
 
 ### Where the analysis is run: Physical location of computing
 
-may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
+Solutions may employ on premises hardware, shared/collaborator hardware, commercially rented cloud hardware, or a mix of all three.
 
-TO DO: add more text?
+> [!WARNING]
+> TO DO -- write this section, doesn't have to be long
 
 ### How the analysis is run: Managing bioinformatic compute workflows
 
