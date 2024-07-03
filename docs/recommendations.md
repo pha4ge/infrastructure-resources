@@ -27,6 +27,8 @@ ORCIDs? (good idea but probably depends on journal)
     - Move to github MD from gdoc
 - 2024-04-12:
     - DP & KN more work and formatting
+- 2024-07-03:
+    - DP & KN more work and clean up and restructuring
 </details>
 
 ## Abstract
