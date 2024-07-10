@@ -189,9 +189,13 @@ The third consideration is that of sustainabilty of resources, both human and fi
 A fourth consideration would be any legal or regulatory issues that may affect the infrastructure setup. It is not uncommon that data associated with humans can have strict regulatory demands put on them. One of the more well known would be the rules regulating information about EU citizens, where the GDPR rules applies to any entity in the world who processes said information. In such situations, it may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are familiar with how to address such requirements.
 
 > [!WARNING]
-> FIX LATER
+> TO DO -- most of the "context-specifi considerations" we want to actually remove from here and promote up to relevant paragraphs within Methods instead.
 
 ## LIMITATIONS / out of scope
+
+> [!WARNING]
+> TO DO -- clean up this subsection
+
 TO DO There are other considerations outside the scope of this document, that include …  all the small stuff we have no specific section about, such as backup.
 Several other considerations are beyond the scope of this document, including….
 
