@@ -189,22 +189,13 @@ The key element that effective compute infrastructure solutions have in common i
 
 Ultimately, the primary purpose of computing infrastructure is to manage data and facilitate bioinformatics analyses regularly performed by staff and researchers in pathogen genomics labs. This is not achieved by CPU cores and terabytes of storage alone, but requires the implementation of workflow execution engines, data management systems, system configuration, and the requisite human resources to maintain this infrastructure, with the end goal of ensuring that their laboratory users are able to effectively manage and analyse their genomic data.
 
-### Context specific considerations
+## TO REMOVE: Context specific considerations
 
-
+> [!WARNING]
+> TO DO -- KL is moving text from below here and promoting up to relevant paragraphs within Methods instead. When done, this whole section will be gone.
 
 The second consideration would be the expected data generation throughput for the lab. The average number of specimens to be sequenced and analysed per month may determine how much resources are invested in the setup. An institution that will analyse hundreds of isolates per year most likely needs a different setup than the one that will analyse thousands of samples per month. A bigger operation will require more resources, more up front design and development of the process, and more standardisation of both processes and analyses. A smaller operation might however choose to either co-opt other existing solutions, or to outsource the process to someone with a larger setup, i.e. most likely go for a SaaS like solution.
 
 The third consideration is that of sustainabilty of resources, both human and financial, to maintain the solution. Significant skills and knowledge are required to set up and run such systems. Some institutions have people inhouse that can run the setup, or learn how to do it, while other institutions rather have financial resources and may choose to use those funds to outsource the setup. This factor may to a significant degree dictate what kind of infrastructure level the institution chooses to go for. If there are long term inhouse human resources available, an on-prem or an IaaS solution may be sensible, while if not, an outsourced PaaS or SaaS solution might be more sustainable. As a general consideration, if considerable flexibility in the system is needed, it will be more efficient and cost effective to have the necessary competences inhouse which will increase the speed of communication and help ensure that there is no direct financial cost associated with introducing modifications than to use a purely vendored solution.
 
 A fourth consideration would be any legal or regulatory issues that may affect the infrastructure setup. It is not uncommon that data associated with humans can have strict regulatory demands put on them. One of the more well known would be the rules regulating information about EU citizens, where the GDPR rules applies to any entity in the world who processes said information. In such situations, it may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are familiar with how to address such requirements.
-
-> [!WARNING]
-> TO DO -- most of the "context-specifi considerations" we want to actually remove from here and promote up to relevant paragraphs within Methods instead.
-
-
-
-
-## Conclusion
-
-
