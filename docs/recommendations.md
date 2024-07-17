@@ -165,13 +165,10 @@ The six implementations are summarised in **Table 1** with details in Supplement
 **Figure 3:** Comparison of six real world bioinformatics infrastructure with key dimensions.
 
 > [!WARNING]
-> CONFUSING - the following sections lacks fluff to explain context
+> CONFUSING - the following paragraphs lacks fluff to explain context
 
 As is evident from **Figure 3**,  only the laptop example was consistently scored the lowest with limited scalability, flexibility and structures (like access control). 
 The INRB Laptop is an example of a local installation on a single device that has the single advantage that it does not require external resources to run. This independence was the key motivating factor for the people who chose to use this solution, due to slow or unreliable internet and power where it was deployed. The INRB Laptop in being self contained and self managed, in addition shifted all management onto the operator and was limited to the resources on the physical device.
-
-> [!WARNING]
-> current working site
 
 Centralised on premises solutions (Nextflow - Ibadan, IRIDA, HPC) had different systems for data provenance and user control but were adequate. Adding a web front end application (IRIDA) provided easy for users without additional complexity for administration. Indeed, the key complication for on premises solutions was the provisioning of the job processing systems, which required expert knowledge. Notably the HPC example uses a traditional HPC arrangement that was married to the HPC hardware making it difficult to switch to other resources for data processing (such as cloud) to scale up or down the resource.  There were different motivations for the different implementations, for instance the HPC on premises example was to utilise existing HPC resources while the IRIDA NVI example was to respond to data privacy and protection requirements. 
 
