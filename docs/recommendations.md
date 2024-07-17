@@ -31,6 +31,8 @@ ORCIDs? (good idea but probably depends on journal)
     - DP & KN more work and clean up and restructuring
 - 2024-07-10:
     - DP & KN more work and clean up
+- 2024-07-17:
+    - DP & KN more work and clean up and restructuring and filling out
 </details>
 
 ## Abstract
@@ -176,7 +178,15 @@ Use of cloud platforms (Terra and UseGalaxy) were motivated by the lack of acces
 
 ## Discussion
 
-Using structured workflows and deliberately planned computational infrastructure can provide the benefits portability, auditability, ease-of-use for analysts within a lab and can enable smaller or newer genomics labs to have the same analytic capabilities as more established labs. The procurement and investment choices for compute infrastructure often have long lasting impacts for such labs and will need to have a degree of being future proof. Thus, we present this technical document to help labs shape a strategy for designing, implementing, and maintaining a compute infrastructure that meets their analytic needs.
+Using structured workflows and deliberately planned computational infrastructure can provide the benefits portability, auditability, ease-of-use for analysts within a lab and can enable smaller or newer genomics labs to have the same analytic capabilities as more established labs. The procurement and investment choices for compute infrastructure often have long lasting impacts for such labs and will need to have a degree of being future proof. Thus, we present this set of technical recommendations to help labs shape a strategy for designing, implementing, and maintaining a compute infrastructure that meets current and future analytic needs.
+
+Several other considerations are beyond the scope of this document, including: availability/SLAs, power management, disaster management and backup, cyber incident management, threat assessments, data management and retention policies, clinical data integration, etc.
+
+Bioinformatics software is a diverse and continually evolving ecosystem of pipelines and similarly, there are a variety of computing infrastructure solutions for pathogen genomics labs. We have described vignettes of a small representative set of successful implementations to illustrate common themes and diverse approaches. The specific solutions and technologies described in these examples are an attempt to highlight commonly used solutions and best practice principles captured at a specific moment in time. The best practice software, technologies, and platforms will certainly evolve over the years, however the basic higher level questions that a lab needs to solve for will remain similar.
+
+The key element that effective compute infrastructure solutions have in common is that they provide a means for laboratory users to run containerised bioinformatic pipelines. This capability is now a minimum requirement for compute infrastructure in pathogen genomics labs, as it empowers them with increased tool portability (they can leverage the community’s ecosystem of tools already written in a standardised bioinformatic workflow language compatible with their infrastructure) and increased user accessibility (ease of use for non-computational users provides a far broader reach to more staff in more labs), ultimately allowing such labs to get new analyses up and running in days. 
+
+Ultimately, the primary purpose of computing infrastructure is to manage data and facilitate bioinformatics analyses regularly performed by staff and researchers in pathogen genomics labs. This is not achieved by CPU cores and terabytes of storage alone, but requires the implementation of workflow execution engines, data management systems, system configuration, and the requisite human resources to maintain this infrastructure, with the end goal of ensuring that their laboratory users are able to effectively manage and analyse their genomic data.
 
 ### Context specific considerations
 
@@ -191,31 +201,9 @@ A fourth consideration would be any legal or regulatory issues that may affect t
 > [!WARNING]
 > TO DO -- most of the "context-specifi considerations" we want to actually remove from here and promote up to relevant paragraphs within Methods instead.
 
-## LIMITATIONS / out of scope
 
-> [!WARNING]
-> TO DO -- clean up this subsection
 
-TO DO There are other considerations outside the scope of this document, that include …  all the small stuff we have no specific section about, such as backup.
-Several other considerations are beyond the scope of this document, including….
-
-In all cases, policies and governance covering resource usage and access need to be in place in advance.
-For example, working with a 3rd party vendor hosting SaaS, the responsibilities on governance may be delegated via contracts/service agreement. These may include: 
-- Availability requirements (such as disaster management and back up)
-- Incident management (in case of a cyber event)
-- Data management (such as data deletion policy)
-- Privacy Impact Assessment
-- Security Threat Assessment
-- Penetration test
-- Security vulnerability scan
-- Clinical data integration
-  
-Please note that the solutions and technologies included in this document are an attempt to highlight commonly used solutions and best practice principles, based on the opinions of this working group, captured at this moment in time. 
 
 ## Conclusion
 
-Bioinformatics software is a diverse and continually evolving ecosystem of pipelines and similarly, there are a variety of computing infrastructure solutions for pathogen genomics labs. We have described vignettes of a small representative set of successful implementations to illustrate common themes and diverse approaches.
 
-The key element that highly ranked compute infrastructure solutions have in common is that they provide a means for laboratory users to run containerised bioinformatic pipelines. This capability is now a minimum requirement for compute infrastructure in pathogen genomics labs, as it empowers them with increased tool portability (they can leverage the community’s ecosystem of tools already written in a standardised bioinformatic workflow language compatible with their infrastructure) and increased user accessibility (ease of use for non-computational users provides a far broader reach to more staff in more labs), ultimately allowing such labs to get new analyses up and running in days. 
-
-Ultimately, the primary purpose of computing infrastructure is to manage data and facilitate bioinformatics analyses regularly performed by staff and researchers in pathogen genomics labs. This is not achieved by CPU cores and terabytes of storage alone, but requires the implementation of workflow execution engines, data management systems, system configuration, and the requisite human resources to maintain this infrastructure, with the end goal of ensuring that their laboratory users are able to effectively manage and analyse their genomic data.
