@@ -19,6 +19,7 @@ ORCIDs? (good idea but probably depends on journal)
  - NFA: 0000-0002-1243-0767
  - KN: 0000-0002-2679-8845
  - DP: 0000-0001-7226-7781
+ - KL: 0000-0003-1329-9032
 
 <details>
  <summary> Document Changelog</summary>
@@ -174,7 +175,7 @@ The INRB Laptop is an example of a local installation on a single device that ha
 
 Centralised on premises solutions (Nextflow - Ibadan, IRIDA, HPC) had different systems for data provenance and user control but were adequate. Adding a web front end application (IRIDA) provided easy for users without additional complexity for administration. Indeed, the key complication for on premises solutions was the provisioning of the job processing systems, which required expert knowledge. Notably the HPC example uses a traditional HPC arrangement that was married to the HPC hardware making it difficult to switch to other resources for data processing (such as cloud) to scale up or down the resource.  There were different motivations for the different implementations, for instance the HPC on premises example was to utilise existing HPC resources while the IRIDA NVI example was to respond to data privacy and protection requirements. 
 
-Use of cloud platforms (Terra and UseGalaxy) were motivated by the lack of access to hardware or expertise to run such hardware required for bioinformatics analysis. Usegalaxy was fairly rigid with the options that were provided while there was more flexibility in the Terra platform. Conversely these platforms, being off-site, required a sufficient internet connection for initial upload of generated data.  As pre-existing platforms available to the public, these were ready for use for any lab with some initial user training and setup.
+Use of cloud platforms (Terra and UseGalaxy) were motivated by the lack of access to hardware or expertise to run such hardware required for bioinformatics analysis. UseGalaxy was fairly rigid with the options that were provided while there was more flexibility in the Terra platform. Conversely these platforms, being off-site, required a sufficient internet connection for initial upload of generated data.  As pre-existing platforms available to the public, these were ready for use for any lab with some initial user training and setup.
 
 ## Discussion
 
