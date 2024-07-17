@@ -147,6 +147,9 @@ Responsibilities for cyber incident management, how one detects and responds to 
 
 To illustrate how different questions (who, what, where) may be answered, we describe six real world implementations (see vignettes for more) of bioinformatics infrastructure to contrast the many benefits and constraints that come with different solutions. To compare them, we have outlined eight dimensions based on these broader questions (see Methods). These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). 
 
+> [!WARNING]
+> DETAIL -- "evaluated by competent practitioners" will need more methodological description even if brief.
+
 The six implementations are summarised in **Table 1** with details in Supplementary Materials. Each solution was evaluated by competent practitioners with experience with the solution. The detailed scoring for each vignettes is in **Supplementary Table 1**. A summary of the assessment of the solutions are presented in **Figure 3**. 
 
 | Lab | Infrastructure | Where | Scope | How | Data sharing | ID & Auth |
