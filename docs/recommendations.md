@@ -1,29 +1,32 @@
 # Framework for Compute Infrastructure for Pathogen Genomics Labs
 
 **PHA4GE Infrastructure Working Group <br/>**
-Authors (order TBD): Daniel Park, Joel Sevinsky, Kelsey Florek, Nabil-Fareed Alikhan, Karin Lagesen, Soyean Kim, Anthony Underwood, Thomas R Connor, Suresh Maslamoney, Kim Lee Ng, Peter van Heusden
+Authors (order TBD): Karin Lagesen, Kim Lee Ng, Nabil-Fareed Alikhan, Soyean Kim, Joel Sevinsky, Kelsey Florek, Anthony Underwood, Thomas R Connor, Suresh Maslamoney, Peter van Heusden, Daniel Park
 
 Affiliations (order TBD):
+1. [KL] Norwegian Veterinary Institute, Ås, Norway;
+1. [KN] – Bacteria, Parasites and Fungi, Statens Serum Institut, Copenhagen, Denmark;
+1. [NFA] Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, UK;
+1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada;
+1. [JS] Theiagen Genomics, USA;
+1. [KF] Wisconsin State Laboratory of Hygiene, Madison, WI, USA;
+1. [AU –- update] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
+1. [TRC] ?
+1. [SM] Computational Biology Division, Department of Integrative Biomedical Sciences, Institute of Infectious Disease and Molecular Medicine, University of Cape Town, Cape Town, South Africa;
 1. [PvH] South African Medical Research Council Bioinformatics Unit, South African National Bioinformatics Institute, University of the Western Cape, Bellville, South Africa;
 1. [DP] Infectious Disease and Microbiome Program, Broad Institute of MIT and Harvard, MA, USA;
-1. [NFA] Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, UK;
-1. [JS] Theiagen Genomics, USA;
-1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada;
-1. [AU –- update] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
-1. [KF] Wisconsin State Laboratory of Hygiene, Madison, WI, USA;
-1. [KL] Norwegian Veterinary Institute, Ås, Norway;
-1. [SM] Computational Biology Division, Department of Integrative Biomedical Sciences, Institute of Infectious Disease and Molecular Medicine, University of Cape Town, Cape Town, South Africa
-1. [KN] – Bacteria, Parasites and Fungi, Statens Serum Institut, Copenhagen, Denmark
 
 ORCIDs? (good idea but probably depends on journal)
- - NFA: 0000-0002-1243-0767
- - KN: 0000-0002-2679-8845
- - DP: 0000-0001-7226-7781
  - KL: 0000-0003-1329-9032
+ - KN: 0000-0002-2679-8845
+ - NFA: 0000-0002-1243-0767
+ - DP: 0000-0001-7226-7781
 
 <details>
  <summary> Document Changelog</summary>
 
+- 2024-11-13:
+    - DP & KN work session
 - 2024-01-30:
     - Move to github MD from gdoc
 - 2024-04-12:
@@ -117,10 +120,7 @@ The choice in workflow management approach influences; **Future proofing**, whic
 
 ### Where the analysis is run: Physical location of computing
 
-Infrastructural solutions may employ end-user hardware, shared on premises / collaborator hardware, commercially rented cloud hardware, or a mix of all three. Ultimately, your choices may be constrained or incentivized by extrinsic factors, such as the other four questions posed in this section, the resources or regulations associated with your institution, government, or collaborative consortium, or your projected future use cases.
-
-> [!WARNING]
-> This section was just written recently and could probably use some proofing. It is short but is okay if it's short (it's short in the poster).
+Infrastructural solutions may employ end-user hardware, shared on premises / collaborator hardware, commercially rented cloud hardware, or a mix of all three. Ultimately, a lab's choices may be constrained or incentivized by extrinsic factors, such as the other four questions posed in this section, the resources or regulations associated with your institution, government, or collaborative consortium, scalability or sustainability concerns, or your projected future use cases. Legal regulation on the geolocality of data or compute are not uncommon. GDPR or country-specific regulations may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are able to address such requirements.
 
 
 ### How data flows: Managing data flow
@@ -136,11 +136,11 @@ In summary, data flow can be described as passing through stages of ingestion, s
 
 ### Who has access: Managing user accounts, identity and access
 
-User identity and access management (IAM) is a key requirement of IT infrastructure which involves managing user authentication, life cycle and the access granted to users (or groups) to data or compute resources as well as monitoring and auditability of user activity. The choices a lab makes, with perhaps its limited domain expertise, around implementation of their compute infrastructure have significant implications that must be considered early on, and in most cases, will require coordination with institutional central IT as well as any external providers that are utilised. In many cases, the processing of pathogen genomic data, and user access considerations, would need to be risk assessed and agreed with organisational information governance.
+User identity and access management (IAM) is a key requirement of IT infrastructure which involves managing user authentication, life cycle and the access granted to users (or groups) to data or compute resources as well as monitoring and auditability of user activity. The chosen compute infrastructure will have significant implications that must be considered early on, and in most cases, will require coordination with institutional central IT as well as any external providers that are utilised. In many cases, the processing of pathogen genomic data, and user access considerations, would need to be risk assessed and agreed with organisational information governance. This work will include agreeing the responsibilities for user and role management, something that is likely to be shared between a lab and its central IT. From the initial provisioning of new user access, to the management of their roles and access levels, review of access as well as the termination and offboarding--user access management is a continuous responsibility. An example of coordinated user management includes the use of the central active directory for accessing services within restricted environments instead of using an independent user management system for authentication and authorization per resource. If this is the case, the genomic compute infrastructure solution should be able to federate logins to other centrally managed (institutional Active Directory, OAuth, SSO) identity systems to facilitate the shared responsibility. Role and authorization management may also be shared. For example, labs may manage access to resources based on group memberships defined by central IT’s AD or group management system.
 
-This work will include agreeing the responsibilities for user and role management, something that is likely to be shared between labs and central IT. From the initial provisioning of new user access, to the management of their roles and access levels, review of access as well as the termination and offboarding—user access management is a continuous responsibility. An example of coordinated user management includes the use of the central active directory for accessing services within restricted environments instead of using an independent user management system for authentication and authorization per resource. If this is the case, the genomic compute infrastructure solution should be able to federate logins to other centrally managed (institutional Active Directory, OAuth, SSO) identity systems to facilitate the shared responsibility. Role and authorization management may also be shared. For example, labs may manage access to resources based on group memberships defined by central IT’s AD or group management system.
+Responsibilities for cyber incident management, how one detects and responds to data breaches or abuse of compute resources, need to be defined as well. While typically the domain of central IT, the use of a formalised external compute platform or service may shift the burden to the external parties that maintain these services. It is important, in all cases, that Central IT understand data flows and other digital activities being undertaken by a laboratory undertaking pathogen genomics analysis and processing, to ensure that security is properly joined up.
 
-Responsibilities for cyber incident management, how one detects and responds to data breaches or abuse of compute resources, need to be defined as well. While typically the domain of central IT, the use of a formalised external compute platform or service may shift the burden to the external parties that maintain these services. It is important, in all cases, that Central IT understand data flows and other digital activities being undertaken by a laboratory undertaking pathogen genomics analysis and processing, to ensure that security is properly joined up.  Many external services (such as Terra or DNAnexus) are routinely audited and provide recognized security and privacy certifications (e.g. FISMA, FedRAMP, NIST-800-53, GDPR/Privacy Shield)—if these are necessary, then this may require the use of such a vendor.
+In the end, institutions may be required or find it desirable to establish a compute environment that satisfies recognized security and privacy certifications, such as FISMA, FedRAMP, or NIST-800-53 in the US, or GDPR/Privacy Shield in the EU. This entails routine audits, penetration testing, and other security processes that highly incentivize the use of an external service or vendor that already provides these (such as Terra or DNAnexus) vs implementing a new or custom solution.
 
 
 ## Results
@@ -197,5 +197,3 @@ Ultimately, the primary purpose of computing infrastructure is to manage data an
 The second consideration would be the expected data generation throughput for the lab. The average number of specimens to be sequenced and analysed per month may determine how much resources are invested in the setup. An institution that will analyse hundreds of isolates per year most likely needs a different setup than the one that will analyse thousands of samples per month. A bigger operation will require more resources, more up front design and development of the process, and more standardisation of both processes and analyses. A smaller operation might however choose to either co-opt other existing solutions, or to outsource the process to someone with a larger setup, i.e. most likely go for a SaaS like solution.
 
 The third consideration is that of sustainabilty of resources, both human and financial, to maintain the solution. Significant skills and knowledge are required to set up and run such systems. Some institutions have people inhouse that can run the setup, or learn how to do it, while other institutions rather have financial resources and may choose to use those funds to outsource the setup. This factor may to a significant degree dictate what kind of infrastructure level the institution chooses to go for. If there are long term inhouse human resources available, an on-prem or an IaaS solution may be sensible, while if not, an outsourced PaaS or SaaS solution might be more sustainable. As a general consideration, if considerable flexibility in the system is needed, it will be more efficient and cost effective to have the necessary competences inhouse which will increase the speed of communication and help ensure that there is no direct financial cost associated with introducing modifications than to use a purely vendored solution.
-
-A fourth consideration would be any legal or regulatory issues that may affect the infrastructure setup. It is not uncommon that data associated with humans can have strict regulatory demands put on them. One of the more well known would be the rules regulating information about EU citizens, where the GDPR rules applies to any entity in the world who processes said information. In such situations, it may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are familiar with how to address such requirements.
