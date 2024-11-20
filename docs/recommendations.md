@@ -26,6 +26,8 @@ ORCIDs? (good idea but probably depends on journal)
 <details>
  <summary> Document Changelog</summary>
 
+- 2024-11-20:
+    - DP & KN work session
 - 2024-11-13:
     - DP & KN work session
 - 2024-01-30:
@@ -173,12 +175,17 @@ To compare and evaluate them, we have outlined eight dimensions based on these b
 > [!WARNING]
 > CONFUSING - the following paragraphs lacks fluff to explain context
 
-As is evident from **Figure 3**,  only the laptop example was consistently scored the lowest with limited scalability, flexibility and structures (like access control). 
-The INRB Laptop is an example of a local installation on a single device that has the single advantage that it does not require external resources to run. This independence was the key motivating factor for the people who chose to use this solution, due to slow or unreliable internet and power where it was deployed. The INRB Laptop in being self contained and self managed, in addition shifted all management onto the operator and was limited to the resources on the physical device.
+(TO DO: some intro sentences setting up this whole section)
+
+As is evident from **Figure 3**,  only the laptop example was consistently scored the lowest with limited scalability, flexibility and structures (like access control). The INRB Laptop is an example of a local installation on a single device that has the single advantage that it does not require external resources to run. This independence was the key motivating factor for the people who chose to use this solution, due to slow or unreliable internet and power where it was deployed. The INRB Laptop in being self contained and self managed, in addition shifted all management onto the operator and was limited to the resources on the physical device.
+
+(TO DO: observe that, with the exception of INRB, a few dimensions are quite similar/consistent among the other five labs)
 
 Centralised on premises solutions (Nextflow - Ibadan, IRIDA, HPC) had different systems for data provenance and user control but were adequate. Adding a web front end application (IRIDA) provided easy for users without additional complexity for administration. Indeed, the key complication for on premises solutions was the provisioning of the job processing systems, which required expert knowledge. Notably the HPC example uses a traditional HPC arrangement that was married to the HPC hardware making it difficult to switch to other resources for data processing (such as cloud) to scale up or down the resource.  There were different motivations for the different implementations, for instance the HPC on premises example was to utilise existing HPC resources while the IRIDA NVI example was to respond to data privacy and protection requirements. 
 
 Use of cloud platforms (Terra and UseGalaxy) were motivated by the lack of access to hardware or expertise to run such hardware required for bioinformatics analysis. UseGalaxy was fairly rigid with the options that were provided while there was more flexibility in the Terra platform. Conversely these platforms, being off-site, required a sufficient internet connection for initial upload of generated data.  As pre-existing platforms available to the public, these were ready for use for any lab with some initial user training and setup.
+
+(TO DO: explain/observe/note the different experience of the user vs experience of the admin aspect)
 
 ## Discussion
 
