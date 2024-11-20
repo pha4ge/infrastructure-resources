@@ -148,12 +148,7 @@ In the end, institutions may be required or find it desirable to establish a com
 
 ## Results
 
-To illustrate how different questions (who, what, where) may be answered, we describe six real world implementations (see vignettes for more) of bioinformatics infrastructure to contrast the many benefits and constraints that come with different solutions. To compare them, we have outlined eight dimensions based on these broader questions (see Methods). These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). 
-
-> [!WARNING]
-> DETAIL -- "evaluated by competent practitioners" will need more methodological description even if brief.
-
-The six implementations are summarised in **Table 1** with details in Supplementary Materials. Each solution was evaluated by competent practitioners with experience with the solution. The detailed scoring for each vignettes is in **Supplementary Table 1**. A summary of the assessment of the solutions are presented in **Figure 3**. 
+To illustrate how different questions (who, what, where) may be answered, we describe six real world implementations of bioinformatics infrastructure to contrast the many benefits and constraints that come with different solutions. The six implementations are summarised in **Table 1**. 
 
 | Lab | Infrastructure | Where | Scope | How | Data sharing | ID & Auth |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -165,6 +160,11 @@ The six implementations are summarised in **Table 1** with details in Supplement
 | NVI (Norway) | IRIDA | HPC | SaaS | Galaxy | via IRIDA project | IRIDA server login |
 
 **Table 1:** Bioinformatics infrastructure from surveyed labs.
+
+> [!WARNING]
+> CONFUSING - we need to bridge the five things to the eight things / motivate the eight things -- also explain how there's more than eight things that got smushed into eight.
+
+To compare and evaluate them, we have outlined eight dimensions based on these broader questions. These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). Each solution was evaluated and scored and stuff (TO DO). Raw data, methods, and analyses are accessible in a public python notebook (TO DO: put in github and add link here). A high level summary of findings is provided in **Figure 3**. 
 
 <img width="75%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/212524f8-2c1b-4314-ad50-eaf452054954">
 
