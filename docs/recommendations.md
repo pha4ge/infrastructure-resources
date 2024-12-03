@@ -60,7 +60,7 @@ Here, we present a description of considerations required in designing computing
 
 ## Methods
 
-Developing computing infrastructure depends on a number of considerations, many of which have been covered elsewhere[^Ahmed2021][^Glatard2017][^Nicholls2021][^Oakeson2017][^Maljkovic2019][^Parkhill2010][^Raza2016] too numerous to address completely. Here we will focus on computing infrastructure as it serves as a platform for running pathogen genomic analyses. We summarise this into five primary questions that pathogen genomics labs must address, and by which we frame our recommendations for compute infrastructure.
+Developing computing infrastructure depends on a number of considerations, many of which have been covered elsewhere[^Ahmed2021][^Glatard2017][^Nicholls2021][^Oakeson2017][^Maljkovic2019][^Parkhill2010][^Raza2016] too numerous to address completely. Here we will focus on computing infrastructure as it serves as a platform for running pathogen genomic analyses. We summarise this into five primary questions that pathogen genomics labs must address, and by which we next will use to frame our recommendations for compute infrastructure. Note, the main target for these recommendations is the institutional provider of pathogen bioinformatics services, commonly a sysadmin team, in addition to the practicing biology end-user.
 
 [^Ahmed2021]: Ahmed AE, Allen JM, Bhat T, Burra P, Fliege CE, Hart SN, et al. Design considerations for workflow management systems use in production genomics research and the clinic. Sci Rep. 2021;11: 21680. https://doi.org/10.1038/s41598-021-99288-8
 [^Glatard2017]: Glatard T, Rousseau M-É, Camarasu-Pop S, Adalat R, Beck N, Das S, et al. Software architectures to integrate workflow engines in science gateways. Future Gener Comput Syst. 2017;75: 239–255. https://doi.org/10.1016/j.future.2017.01.005
@@ -69,6 +69,9 @@ Developing computing infrastructure depends on a number of considerations, many 
 [^Maljkovic2019]: Maljkovic Berry I, Melendrez MC, Bishop-Lilly KA, Rutvisuttinunt W, Pollett S, Talundzic E, et al. Next Generation Sequencing and Bioinformatics Methodologies for Infectious Disease Research and Public Health: Approaches, Applications, and Considerations for Development of Laboratory Capacity. J Infect Dis. 2019. https://doi.org/10.1093/infdis/jiz286
 [^Parkhill2010]: Parkhill J, Birney E, Kersey P. Genomic information infrastructure after the deluge. Genome Biol. 2010. Available: http://genomebiology.com/content/11/7/402
 [^Raza2016]: Raza S, Luheshi L. Big data or bust: realizing the microbial genomics revolution. Microb Genom. 2016;2: e000046. https://doi.org/10.1099/mgen.0.000046
+
+#### Five factors for bioinformatics infrastructure
+These factors are described from the perspective of a reasonably seasoned systems administrator (here, the 'admins user', as opposed to the end user, the more biologically inclined biologist. 
 
   **How much does the infrastructure try and solve:** which parts of the pathogen bioinformatics analysis solution do you want to be responsible for?
 
