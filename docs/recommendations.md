@@ -166,19 +166,19 @@ To illustrate how different questions (who, what, where) may be answered, we des
 
 **Table 1:** Bioinformatics infrastructure from surveyed labs.
 
+To evaluate the systems, members of the PHA4GE consortium were asked to score each system through a series of questions pertaining to the five factors already mentioned. These questions were subsequently grouped into eight different dimentions, and the scores are displayed in **Figure 3**. These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). The raw data, methods, and analyses are accessible in a public python notebook (TO DO: put in github and add link here). 
+
 > [!WARNING]
 > CONFUSING - we need to bridge the five things to the eight things / motivate the eight things -- also explain how there's more than eight things that got smushed into eight.
 
-To compare and evaluate them, we have outlined eight dimensions based on these broader questions. These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). Each solution was evaluated and scored and stuff (TO DO). Raw data, methods, and analyses are accessible in a public python notebook (TO DO: put in github and add link here). A high level summary of findings is provided in **Figure 3**. 
-
 <img width="75%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/212524f8-2c1b-4314-ad50-eaf452054954">
 
-**Figure 3:** Comparison of six real world bioinformatics infrastructure with key dimensions.
+**Figure 3:** Comparison of six real world bioinformatics infrastructure with key dimensions. Each dimension is here an average of the scores of the questions that forms the foundation for that dimension XXXXX check if this is true XXXXX.
 
 > [!WARNING]
 > CONFUSING - the following paragraphs lacks fluff to explain context
 
-(TO DO: some intro sentences setting up this whole section)
+> Karin continue here
 
 As is evident from **Figure 3**,  only the laptop example was consistently scored the lowest with limited scalability, flexibility and structures (like access control). The INRB Laptop is an example of a local installation on a single device that has the single advantage that it does not require external resources to run. This independence was the key motivating factor for the people who chose to use this solution, due to slow or unreliable internet and power where it was deployed. The INRB Laptop in being self contained and self managed, in addition shifted all management onto the operator and was limited to the resources on the physical device.
 
