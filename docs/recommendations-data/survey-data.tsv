@@ -1,0 +1,33 @@
+Timestamp	Name	Which vignette are you assessing?	Frequency data needs to be sent to external servers (across WAN)	Proportion of time required connected to external servers 	Supports Independent Identity	Supports user roles (Access)	Supports federated/institutional identity management (Management)	Compatibility with Kubernetes 	Compatibility with (other)	Whether workflows can be added (or extended) to meet future requirements	Module extension to add other functionality	Ease to deploy	Ease of maintenance and administration	Data management capacity	Ease to coordinate with central IT	Ease of Use for non-specialist (i.e. GUI)	Data provenance (of seq data itself) 	Manifest of tools and versions 	Cloud compatibility / Infrastructure compability	Multi cloud support	Ease of scalability for additional users	Scalable for changing data volume (100 / week <> 10000 / week)
+09/11/2022 20:04:41	Danny	Laptop - INRB	4	4	1	1	2	1	2	2	3	3	1	1	4	2	4	2	1	1	1	1
+09/11/2022 20:18:58	Danny	IRIDA - NVI	3	2	4	5	3	5	5	4	4	4	4	5	3	5	5	5	4	3	5	4
+06/12/2022 15:57:00	Peter van Heusden	Laptop - INRB	5	5	1	1	1	1	2	2	2	4	4	1	2	1	2	1	1	1	1	1
+06/12/2022 23:31:00	Soyean	IRIDA - NVI		3	3	4	3	4	3	2	4	3	4	4	2	5	2	2	1	1	4	4
+31/01/2023 13:46:00	Peter van Heusden	IRIDA - NVI	5	4	5	5	6	2	3	4	3	4	3	5	3	5	4	5	1	1	5	3
+31/01/2023 13:54:23	Peter van Heusden	Nextflow - Ibadan	2	3	4	2	5	5	5	5	1	5	5	4	3	4	5	4	3	1	5	5
+31/01/2023 13:56:31	Peter van Heusden	SANBI on prem	5	3	3	4	8	2	1	5	5	2	2	2	3	4	4	3	1	1	4	2
+31/01/2023 15:08:12	Nabil	Laptop - INRB	5	5	1	1	2	1	1	1	4	2	1	1	1	1	1	2	1	1	1	1
+31/01/2023 15:14:45	Nabil	Terra - US PHLs	1	2	5	5	5			5	5	5	5	5	5	5	5	5	5	1	5	5
+31/01/2023 15:21:25	Nabil	SANBI on prem	4	3	4	5	9	5	5	5	4	2	2	4	3	5	4	4	4	3	4	2
+31/01/2023 15:24:45	Nabil	UseGalaxy.eu	2	1	4	5	5	3	3	5	5	5	5	5		3	3	4	3	3	4	2
+31/01/2023 15:27:20	Nabil	Nextflow - Ibadan	3	3	3	3	5	3	3	3	3	3	3	3	3	3	3	3	4	4	3	3
+31/01/2023 15:29:58	Nabil	IRIDA - NVI	4	4	4	5	8	3	3	4	2	2	2	4	2	4	4	4	3	3	4	3
+31/01/2023 15:54:36	Peter van Heusden	Terra - US PHLs	2	3	4	3	7	1	1	5	2	4	5	4	5	4	5	5	4	1	5	5
+31/01/2023 15:57:09	Peter van Heusden	UseGalaxy.eu	2	3	5	4	7	1	1	4	3	5	5	5	5		3	5	2	3	5	5
+01/02/2023 10:56:08	Kim Ng	Terra - US PHLs	1	1	5	5	5	1	1	5	5	5	5	3	1	5	4	4	1	1	5	5
+01/02/2023 11:08:59	Kim Ng	UseGalaxy.eu	1	1	5	3	1	1	1	2	4	5	5	1	2	5	3	3	1	1	5	4
+01/02/2023 11:13:10	Kim Ng	SANBI on prem	5	4	5	5	10	3	3	2	5	3	3	4	3	2	4	4	3	4	4	3
+01/02/2023 11:19:58	Kim Ng	Nextflow - Ibadan	1	1	5	5	10	4	4	3	5	2	2	5	3	5	4	4	4	5	5	5
+01/02/2023 11:23:02	Kim Ng	IRIDA - NVI	1	3	5	5	10	3	3	4	5	3	3	5	3	5	4	4	3	3	5	5
+01/02/2023 11:25:54	Kim Ng	Laptop - INRB	5	5	2	2	1	2	2	2	3	2	2	1	4	1	1	3	1	1	1	1
+13/02/2023 21:18:49	Danny Park	Terra - US PHLs	1	3	5	5	9	5	5	5	4	5	5	5	4	5	4	4	4	3	5	5
+13/02/2023 21:20:54	Danny Park	UseGalaxy.eu	1	3	5	4	6	4	5	3	3	5	5	5	4	5	5	5	4	4	4	4
+13/02/2023 21:27:58	Danny Park	Nextflow - Ibadan	1	3	4	4	4	4	5	5	3	3	4	2	4	4	5	5	4	5	5	5
+13/02/2023 23:15:09	Danny Park	SANBI on prem	4	4	4	4	6	2	3	3	3	3	2	3	4	3	4	3	3	2	2	2
+14/02/2023 04:53:46	Joel Sevinsky	Terra - US PHLs	3	4	4	5	10		5	5	5	5	5	4	3	4	5	5	5	3	5	5
+14/02/2023 13:58:56	Karin Lagesen	Laptop - INRB	5	5	3	1	5	2	2	3	3	3	4	2	2	1	2	4	3	1	1	1
+14/02/2023 15:31:37	Karin Lagesen	IRIDA - NVI	1	1	5	5	7	3	3	4	4	2	2	5	2	5	5	4	4	4	5	5
+14/02/2023 15:40:59	Karin Lagesen	Nextflow - Ibadan	1	1	4	4	3	3	3	4	4	2	3	2	2	1	2	4	4	4	3	4
+14/02/2023 15:50:36	Karin Lagesen	SANBI on prem	5	4	4	4	6	3	3	4	4	2	3	4	3	3	4	4	4	3	4	4
+14/02/2023 15:55:19	Karin Lagesen	Terra - US PHLs	1	1	5	5	8	3	3	4	4	2	4	4	2	5	4	4	5	5	5	5
+14/02/2023 15:59:13	Karin Lagesen	UseGalaxy.eu	1	1	5	5	5	3	3	4	4	1	1	5	3	5	5	5	5	5	5	5
