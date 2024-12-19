@@ -149,7 +149,7 @@ Responsibilities for cyber incident management, how one detects and responds to 
 In the end, institutions may be required or find it desirable to establish a compute environment that satisfies recognized security and privacy certifications, such as FISMA, FedRAMP, or NIST-800-53 in the US, or GDPR/Privacy Shield in the EU. This entails routine audits, penetration testing, and other security processes that highly incentivize the use of an external service or vendor that already provides these (such as Terra or DNAnexus) vs implementing a new or custom solution.
 
 
-## Results
+## Presentation of exemplar systems
 
 To illustrate how different questions (who, what, where) may be answered, we describe six real world implementations of bioinformatics infrastructure to contrast the many benefits and constraints that come with different solutions. The six implementations are summarised in **Table 1**. 
 
@@ -164,7 +164,18 @@ To illustrate how different questions (who, what, where) may be answered, we des
 
 **Table 1:** Bioinformatics infrastructure from surveyed labs.
 
-To evaluate the systems, members of the PHA4GE consortium were asked to score each system through a series of questions pertaining to the five factors already mentioned. These questions were subsequently grouped into eight different dimentions, and the scores are displayed in **Figure 3**. These dimensions include; **Future proofing**, **Ease of use** (for administrator), **Ease of use** (for user) (How the analysis is run); **Data provenance and management** (How data flows); **Access control** (Who has access); **External access requirements**, **Flexibility**, **Scalability** (Where the analysis is run). The raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)).
+To evaluate the systems, members of the PHA4GE consortium were asked to score each system through a series of questions pertaining to the five factors already mentioned. These questions were subsequently grouped into eight different dimentions, and the scores are displayed in **Figure 3**. These dimensions include; 
+
+- Future proofing
+- Ease of use (for administrator)
+- Ease of use (for user)
+- Data provenance and management
+- Access control
+- External access requirements
+- Flexibility
+- Scalability
+
+The raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)).
 
 > [!WARNING]
 > CONFUSING - we need to bridge the five things to the eight things / motivate the eight things -- also explain how there's more than eight things that got smushed into eight.
