@@ -60,7 +60,7 @@ Whole genome sequencing of pathogens has now matured, offering improved methods 
 
 Here, we present a description of considerations required in designing computing infrastructure that will cater to the requirements of common pathogen genome analysis pipelines. We also present  an assessment of benefits and limitations of existing solutions utilising on premises hardware or cloud-backed computing resources. 
 
-## Methods
+## Five factors for bioinformatics infrastructure
 
 Developing computing infrastructure depends on a number of considerations, many of which have been covered elsewhere[^Ahmed2021][^Glatard2017][^Nicholls2021][^Oakeson2017][^Maljkovic2019][^Parkhill2010][^Raza2016] too numerous to address completely. Here we will focus on computing infrastructure as it serves as a platform for running pathogen genomic analyses. We summarise this into five primary questions that pathogen genomics labs must address, and by which we next will use to frame our recommendations for compute infrastructure. Note, the main target for these recommendations is the institutional provider of pathogen bioinformatics services, commonly a sysadmin team, in addition to the practicing biology end-user.
 
@@ -72,7 +72,6 @@ Developing computing infrastructure depends on a number of considerations, many 
 [^Parkhill2010]: Parkhill J, Birney E, Kersey P. Genomic information infrastructure after the deluge. Genome Biol. 2010. Available: http://genomebiology.com/content/11/7/402
 [^Raza2016]: Raza S, Luheshi L. Big data or bust: realizing the microbial genomics revolution. Microb Genom. 2016;2: e000046. https://doi.org/10.1099/mgen.0.000046
 
-#### Five factors for bioinformatics infrastructure
 These factors are described from the perspective of a reasonably seasoned systems administrator (here, the 'admins user', as opposed to the end user, the more biologically inclined biologist. 
 
   **How much does the infrastructure try and solve:** which parts of the pathogen bioinformatics analysis solution do you want to be responsible for?
@@ -97,8 +96,6 @@ There are a multitude of options for bioinformatic computing infrastructure depl
 
 Note that the abstraction level is independent of where the physical location of the compute resources are.
 
-The choice of abstraction level influences and is influenced by many other factors. **Throughput**, i.e. the number samples that need to be run through the system; **flexibility**, which includes to what extent analyses can and should be modified by users; **scalability**, which includes to what extent additional users can be added, and the extent to which the solution allows for changes in data volume; **external access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers; and **sustainability**, which includes to what extent financial and competent human resources are and will be available to support the chosen solution and the level of maintenance and upkeep required to be performed by lab staff.
-
 ![service-diagram-20211116-dp](https://github.com/pha4ge/infrastructure-resources/assets/8513746/d0c66464-28ba-4467-8f20-b0a39cc65d5c)
 **Figure 1: Scope of Responsibility** - the scope of what different solutions attempt to solve for the users and admins. All infrastructure components (bottom of figure) need to be addressed by some combination of the end-user, system admins, or an external party. The degree to which responsibility can be deferred to a third party depends on the solution chosen. For example, on the IaaS level, a research group will also need to provide their own solution for orchestrating infrastructure (including software installation, selecting and installing a pipeline executor and installing pipelines), which would be solved via SaaS. Thus, selecting a lower level of abstraction introduces additional flexibility with the burden of additional complexity for the users.
 
@@ -121,8 +118,6 @@ A pipeline sharing ecosystem is a platform (such as [Dockstore](https://dockstor
 Workflow execution software (such as the Nextflow runner) or platforms (such as Galaxy or Terra) can often automate the import and execution of workflow pipelines from such ecosystems. SaaS solutions often employ such pipelines under the hood, but only present a curated set to its users.
 
 Ultimately, the choices made here directly impact the ecosystem of easily available bioinformatic pipelines readily available to end users.
-
-The choice in workflow management approach influences; **Future proofing**, which extends to whether workflows can be added (or extended) to meet future requirements, and includes module extension to add other functionality; **Ease of use (for administrators)**, such as ease to deploy, ease of maintenance and administration, and ease to coordinate with central IT; and **Ease of use (for users)**, in particular for non-computational-specialists (i.e. GUI interfaces).
 
 <img width="60%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/dd54673d-685c-4e11-a8fd-14f992e39226">
 
@@ -173,6 +168,11 @@ To evaluate the systems, members of the PHA4GE consortium were asked to score ea
 
 > [!WARNING]
 > CONFUSING - we need to bridge the five things to the eight things / motivate the eight things -- also explain how there's more than eight things that got smushed into eight.
+
+The choice of abstraction level influences and is influenced by many other factors. **Throughput**, i.e. the number samples that need to be run through the system; **flexibility**, which includes to what extent analyses can and should be modified by users; **scalability**, which includes to what extent additional users can be added, and the extent to which the solution allows for changes in data volume; **external access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers; and **sustainability**, which includes to what extent financial and competent human resources are and will be available to support the chosen solution and the level of maintenance and upkeep required to be performed by lab staff.
+
+The choice in workflow management approach influences; **Future proofing**, which extends to whether workflows can be added (or extended) to meet future requirements, and includes module extension to add other functionality; **Ease of use (for administrators)**, such as ease to deploy, ease of maintenance and administration, and ease to coordinate with central IT; and **Ease of use (for users)**, in particular for non-computational-specialists (i.e. GUI interfaces).
+
 
 <img width="75%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/212524f8-2c1b-4314-ad50-eaf452054954">
 
