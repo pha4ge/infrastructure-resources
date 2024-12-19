@@ -25,7 +25,8 @@ ORCIDs? (good idea but probably depends on journal)
 
 <details>
  <summary> Document Changelog</summary>
-
+- 2024-12-19:
+    - DP & KN work session
 - 2024-12-13:
     - DP & KN work session. python notebook and data moved to github.
 - 2024-11-20:
@@ -166,14 +167,14 @@ To illustrate how different questions (who, what, where) may be answered, we des
 
 To evaluate the systems, members of the PHA4GE consortium were asked to score each system through a series of questions pertaining to the five factors already mentioned. These questions were subsequently grouped into eight different dimensions or features, and the scores are displayed in **Figure 3**. These features include; 
 
-- Future proofing
-- Ease of use (for administrator)
-- Ease of use (for user)
-- Data provenance and management
-- Access control
-- External access requirements
-- Flexibility
-- Scalability
+- **Future proofing** - how easy it is to add workflows or functionality that are new, bespoke, or customised
+- **Ease of use (for administrator)** - level of effort required for the lab/group's administrative or technical lead to deploy and maintain this infrastructure
+- **Ease of use (for user)** - accessibility of infrastructure to analysts / end users in the group
+- **Data provenance and management** - how much native support the infrastructure provides for data management, provenance tracking of analytic outputs, data audit/change logs, tool manifests & version logging for analyses, etc
+- **Access control** - maturity level of identity and access management, ability to integrate with commonly used institutional IAM solutions
+- **External access requirements** - external network connectivity requirements (speed and reliability) to use this infrastructure effectively
+- **Flexibility** - degree of compatibility with various cloud compute vendors or technologies that may already be in use by an institution
+- **Scalability** - ability for infrastructure to burst compute workload as well as grow (data volume, compute workload, active user count) over time with a lab
 
 The raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)).
 
