@@ -183,7 +183,7 @@ The choices made for each of the five factors mentioned will determine what feat
 The choice in workflow management approach will influence **Future proofing**, which extends to whether workflows can be added (or extended) to meet future requirements, and includes module extension to add other functionality; **Ease of use (for administrators)**, such as ease to deploy, ease of maintenance and administration, and ease to coordinate with central IT; and **Ease of use (for users)**, in particular for non-computational-specialists (i.e. GUI interfaces).
 
 
-BLABLA BLA
+> We will replace lines 181 - 188  with a factor x feature table
 
 ; and **sustainability**, which includes to what extent financial and competent human resources are and will be available to support the chosen solution and the level of maintenance and upkeep required to be performed by lab staff.
 
