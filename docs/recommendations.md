@@ -176,7 +176,22 @@ To evaluate the systems, members of the PHA4GE consortium were asked to score ea
 - **Flexibility** - degree of compatibility with various cloud compute vendors or technologies that may already be in use by an institution
 - **Scalability** - ability for infrastructure to burst compute workload as well as grow (data volume, compute workload, active user count) over time with a lab
 
-> We will replace lines 179 - 185  with a factor x feature table
+The choices made for each of the five factors mentioned will determine what features the resulting system will have. For instance, the choice of workflow management will affect Future proofing with regards to whether workflows can be added (or extended) to meet future requirements, the Ease of use (for administrators), such as ease to deploy, ease of maintenance and administration, and ease to coordinate with central IT; and Ease of use (for users), in particular for non-computational-specialists (i.e. if the system has a GUI interface). Table 2 shows which features should be considered when considering the different factors. 
+
+
+| Factor | Where | Scope | How | Data sharing | ID & Auth |
+| --- | --- | --- | --- | --- | --- |
+| Future proofing | --- | --- | --- | --- | --- |
+| Ease of use (admin) | --- | --- | --- | --- | --- | 
+| Ease of use (user) | --- | --- | --- | --- | --- | 
+| Data governance | --- | --- | --- | --- | --- | 
+| Access control | --- | --- | --- | --- | --- | 
+| External access | --- | --- | --- | --- | --- | 
+| Flexibility | --- | --- | --- | --- | --- | 
+| Scalability | --- | --- | --- | --- | --- | 
+
+
+> encode 194-200 into table above.
 
 The choices made for each of the five factors mentioned will determine what features the resulting system will have. The level of abtraction chosen will determine the system's **flexibility**, which includes to what extent analyses can and should be modified by users; **scalability**, which includes to what extent additional users can be added, and the extent to which the solution allows for changes in data volume; **external access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers
 
