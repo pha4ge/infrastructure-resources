@@ -165,7 +165,7 @@ To illustrate how different questions (who, what, where) may be answered, we des
 
 **Table 1:** Bioinformatics infrastructure from surveyed labs.
 
-To evaluate the systems, members of the PHA4GE consortium were asked to score each system through a series of questions pertaining to the five factors already mentioned. These questions were subsequently grouped into eight different dimensions or features, and the scores are displayed in **Figure 3**. These features include; 
+To evaluate the systems, members of the PHA4GE consortium were asked to score each system through a series of questions pertaining to the five factors already mentioned. These questions were subsequently grouped into eight different dimensions or features, and the scores are displayed in **Figure 3**. These features include:
 
 - **Future proofing** - how easy it is to add workflows or functionality that are new, bespoke, or customised
 - **Ease of use (for administrator)** - level of effort required for the lab/group's administrative or technical lead to deploy and maintain this infrastructure
@@ -176,18 +176,15 @@ To evaluate the systems, members of the PHA4GE consortium were asked to score ea
 - **Flexibility** - degree of compatibility with various cloud compute vendors or technologies that may already be in use by an institution
 - **Scalability** - ability for infrastructure to burst compute workload as well as grow (data volume, compute workload, active user count) over time with a lab
 
-The raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)).
+> We will replace lines 179 - 185  with a factor x feature table
 
 The choices made for each of the five factors mentioned will determine what features the resulting system will have. The level of abtraction chosen will determine the system's **flexibility**, which includes to what extent analyses can and should be modified by users; **scalability**, which includes to what extent additional users can be added, and the extent to which the solution allows for changes in data volume; **external access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers
 
 The choice in workflow management approach will influence **Future proofing**, which extends to whether workflows can be added (or extended) to meet future requirements, and includes module extension to add other functionality; **Ease of use (for administrators)**, such as ease to deploy, ease of maintenance and administration, and ease to coordinate with central IT; and **Ease of use (for users)**, in particular for non-computational-specialists (i.e. GUI interfaces).
 
-
-> We will replace lines 181 - 188  with a factor x feature table
-
 ; and **sustainability**, which includes to what extent financial and competent human resources are and will be available to support the chosen solution and the level of maintenance and upkeep required to be performed by lab staff.
 
-
+The survey's raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)). A summary of the results is depicted in **Figure 3**.
 
 <img width="75%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/212524f8-2c1b-4314-ad50-eaf452054954">
 
