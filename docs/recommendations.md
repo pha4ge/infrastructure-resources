@@ -201,11 +201,9 @@ The choice in workflow management approach will influence **Future proofing**, w
 
 The survey's raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)). A summary of the results is depicted in **Figure 3**.
 
-<img width="75%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/212524f8-2c1b-4314-ad50-eaf452054954">
+<img width="75%" alt="image" src="figures/pha4ge_spiderplot.png">
 
 **Figure 3:** Comparison of six real world bioinformatics infrastructure scored across eight key dimensions or features. Each feature plotted here is an average of the scores of the survey questions that comprise that feature (see notebook code for details).
-
-(TO DO: fix "SAMBI" in figure)
 
 > [!WARNING]
 > CONFUSING - the following paragraphs lacks fluff to explain context
