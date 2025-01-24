@@ -5,7 +5,7 @@ Authors (order TBD): Karin Lagesen, Kim Lee Ng, Nabil-Fareed Alikhan, Soyean Kim
 
 Affiliations (order TBD):
 1. [KL] Norwegian Veterinary Institute, Ås, Norway;
-1. [KN] Bacteria, Parasites and Fungi, Statens Serum Institut, Copenhagen, Denmark;
+1. [KN] Bioinformatics and Sequencing, Statens Serum Institut, Copenhagen, Denmark;
 1. [NFA] Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, UK;
 1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada;
 1. [JS] Theiagen Genomics, USA;
