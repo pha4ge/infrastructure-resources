@@ -205,18 +205,16 @@ The survey's raw data, methods, and analyses are accessible in a public python n
 
 **Figure 3:** Comparison of six real world bioinformatics infrastructure scored across eight key dimensions or features. Each feature plotted here is an average of the scores of the survey questions that comprise that feature (see notebook code for details).
 
-> [!WARNING]
-> CONFUSING - the following paragraphs lacks fluff to explain context
+The six real world implementations described in **Table 1**, and evaluated in **Figure 3**, represent a wide range of strategies to facilitate genomic data analysis in different public health labs. Here, we observe some general commonalities and differences in their effectiveness and prioritized needs.
 
-> Karin continue here
-
-As is evident from **Figure 3**, the INRB laptop was the primary outlier, with the other labs scoring more similarly across the various dimensions. The laptop-base example consistently scored the lowest with limited scalability, flexibility and structures (like access control). It is an example of a local installation on a single device whose primary advantage is that it does not require external resources to run. This independence was the key motivating factor for the people who chose to use this solution, due to slow or unreliable internet and power where it was deployed. The INRB Laptop in being self contained and self managed, in addition shifted all management onto the operator and was limited to the resources on the physical device. 
+Overall, the INRB laptop approach was the primary outlier, with the other solutions scoring more similarly across the various dimensions. The laptop-base example consistently scored the lowest with limited scalability, flexibility and structures (like access control). It is an example of a local installation on a single device whose primary advantage is that it does not require external resources to run. This independence was the key motivating factor for the people who chose to use this solution, due to slow or unreliable internet and power where it was deployed. The INRB Laptop in being self contained and self managed, in addition shifted all management onto the operator and was limited to the resources on the physical device. 
 
 Centralised on premises solutions (Nextflow - Ibadan, IRIDA, HPC) had different systems for data provenance and user control but all met the needs of their respective labs. Adding a web front end application (IRIDA) provided easy for users without additional complexity for administration. Indeed, the key complication for on premises solutions was the provisioning of the job processing systems, which required expert knowledge. Notably the HPC example uses a traditional HPC arrangement that was married to the HPC hardware making it difficult to switch to other resources for data processing (such as cloud) to scale up or down the resource.  There were different motivations for the different implementations, for instance the HPC on premises example was to utilise existing HPC resources while the IRIDA NVI example was to respond to data privacy and protection requirements. 
 
 Use of cloud platforms (Terra and UseGalaxy) were sometimes motivated by the lack of access to hardware or expertise to run such hardware required for bioinformatics analysis. UseGalaxy was fairly rigid with the options that were provided while there was more flexibility in the Terra platform for the user to bring in external analysis workflows. Conversely these platforms, being off-site, required a sufficient internet connection for initial upload of generated data.  As pre-existing platforms available to the public, these were ready for use for any lab with some initial user training and setup.
 
-(TO DO: explain/observe/note the different experience of the user vs experience of the admin aspect -- ACTUALLY: perhaps this distinction should be clarified up in the text right below Table 1)
+*TO DO: explain/observe/note the different experience of the user vs experience of the admin aspect -- ACTUALLY: perhaps this distinction should be clarified up in the text right below Table 1)*
+
 
 ## Discussion
 
