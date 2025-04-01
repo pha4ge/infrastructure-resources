@@ -176,7 +176,7 @@ To evaluate the systems, members of the PHA4GE consortium were asked to score ea
 - **Flexibility** - degree of compatibility with various cloud compute vendors or technologies that may already be in use by an institution
 - **Scalability** - ability for infrastructure to burst compute workload as well as grow (data volume, compute workload, active user count) over time with a lab
 
-The choices made for each of the five factors mentioned will determine what features the resulting system will have. For instance, the choice of workflow management will affect "Future proofing" since the choices made will affect to what extent workflows can be added (or extended) to meet future requirements. Similarly, it will affect "Ease of use (for administrators)", since it will affect how easy it will be to deploy new workflows. Table 2 shows to what extent we believe that a factor will is affected by the choices made for the different factors. 
+The choices made for each of the five factors mentioned will determine what features the resulting system will have. For instance, the choice of workflow management will affect "Future proofing" since the choices made will affect to what extent workflows can be added (or extended) to meet future requirements. Similarly, it will affect "Ease of use (for administrators)", since it will affect how easy it will be to deploy new workflows. **Table 2** shows to what extent we believe that a factor will is affected by the choices made for the different factors. 
 
 
 | Factor | Where | Scope | How | Data sharing | ID & Auth |
