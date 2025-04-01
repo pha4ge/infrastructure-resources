@@ -1,9 +1,10 @@
 # Framework for Compute Infrastructure for Pathogen Genomics Labs
 
 **PHA4GE Infrastructure Working Group**
+
 Authors: Karin Lagesen, Kim Lee Ng, Nabil-Fareed Alikhan, Soyean Kim, Joel Sevinsky, Kelsey Florek, Anthony Underwood, Thomas R Connor, Suresh Maslamoney, Peter van Heusden, Daniel Park
 
-Affiliations (order TBD):
+Affiliations:
 1. [KL] Norwegian Veterinary Institute, Ås, Norway;
 1. [KN] Bioinformatics and Sequencing, Statens Serum Institut, Copenhagen, Denmark;
 1. [NFA] Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, UK;
