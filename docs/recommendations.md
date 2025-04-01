@@ -181,14 +181,14 @@ The choices made for each of the five factors mentioned will determine what feat
 
 | Factor | Where | Scope | How | Data sharing | ID & Auth |
 | --- | --- | --- | --- | --- | --- |
-| Future proofing | --- | --- | --- | --- | --- |
-| Ease of use (admin) | --- | --- | --- | --- | --- | 
-| Ease of use (user) | --- | --- | --- | --- | --- | 
-| Data governance | --- | --- | --- | --- | --- | 
-| Access control | --- | --- | --- | --- | --- | 
-| External access | --- | --- | --- | --- | --- | 
-| Flexibility | --- | --- | --- | --- | --- | 
-| Scalability | --- | --- | --- | --- | --- | 
+| Future proofing | H | H | M | H | M |
+| Ease of use (admin) | M | L | L | M | M | 
+| Ease of use (user) | M | M | L | L | L | 
+| Data governance | M | M | M | H | M | 
+| Access control | M | L | M | M | H | 
+| External access | M | L | M | L | M | 
+| Flexibility | M | M | L | L | L | 
+| Scalability | H | M | M | H | L | 
 
 
 > encode 194-200 into table above.
