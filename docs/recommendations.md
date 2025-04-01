@@ -190,6 +190,7 @@ The choices made for each of the five factors mentioned will determine what feat
 | Flexibility | M | M | L | L | L | 
 | Scalability | H | M | M | H | L | 
 
+**Table 2:** Overview over to what extent a feature is affected by the choices made for each of the five features. Range: L - low, M - medium, H - High. 
 
 The survey's raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)). A summary of the results is depicted in **Figure 3**.
 
