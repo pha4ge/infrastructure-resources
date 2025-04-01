@@ -191,14 +191,6 @@ The choices made for each of the five factors mentioned will determine what feat
 | Scalability | H | M | M | H | L | 
 
 
-> encode 194-200 into table above.
-
-The choices made for each of the five factors mentioned will determine what features the resulting system will have. The level of abtraction chosen will determine the system's **flexibility**, which includes to what extent analyses can and should be modified by users; **scalability**, which includes to what extent additional users can be added, and the extent to which the solution allows for changes in data volume; **external access requirements**, which includes the frequency data needs to be sent to external servers and proportion of time required connected to external servers
-
-The choice in workflow management approach will influence **Future proofing**, which extends to whether workflows can be added (or extended) to meet future requirements, and includes module extension to add other functionality; **Ease of use (for administrators)**, such as ease to deploy, ease of maintenance and administration, and ease to coordinate with central IT; and **Ease of use (for users)**, in particular for non-computational-specialists (i.e. GUI interfaces).
-
-; and **sustainability**, which includes to what extent financial and competent human resources are and will be available to support the chosen solution and the level of maintenance and upkeep required to be performed by lab staff.
-
 The survey's raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)). A summary of the results is depicted in **Figure 3**.
 
 <img width="90%" alt="image" src="figures/pha4ge_spiderplot.png">
