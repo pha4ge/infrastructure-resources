@@ -1,5 +1,9 @@
 # Framework for Compute Infrastructure for Pathogen Genomics Labs
 
+alternative title:
+
+# Considerations for Compute Infrastructure for Pathogen Sequence Analysis
+
 **PHA4GE Infrastructure Working Group**
 
 Authors: Karin Lagesen, Kim Lee Ng, Nabil-Fareed Alikhan, Soyean Kim, Joel Sevinsky, Kelsey Florek, Anthony Underwood, Thomas R Connor, Suresh Maslamoney, Peter van Heusden, Daniel Park
