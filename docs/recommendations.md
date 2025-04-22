@@ -15,7 +15,7 @@ Affiliations:
 1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada;
 1. [JS] Theiagen Genomics, USA;
 1. [KF] Wisconsin State Laboratory of Hygiene, Madison, WI, USA;
-1. [AU –- update] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
+1. [AU –- update - now at Broken String Biosciences] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
 1. [TRC] Public Health Wales NHS Trust, 2 Capital Quarter, Tyndall St, Cardiff CF10 4BZ and University of Cardiff, Sir Martin Evans Building, Museum Avenue, Cardiff, CF10 3AX;
 1. [SM] Computational Biology Division, Department of Integrative Biomedical Sciences, Institute of Infectious Disease and Molecular Medicine, University of Cape Town, Cape Town, South Africa;
 1. [PvH] South African Medical Research Council Bioinformatics Unit, South African National Bioinformatics Institute, University of the Western Cape, Bellville, South Africa;
@@ -27,6 +27,11 @@ ORCIDs? (good idea but probably depends on journal)
  - TRC: 0000-0003-2394-6504
  - NFA: 0000-0002-1243-0767
  - DP: 0000-0001-7226-7781
+ - PVH: 0000-0001-6553-5274
+ - KF: 0000-0002-8743-8579
+ - SK: ??? - PvH emailed 22/4/2025
+ - AU: ??? - PvH trying to contact via LinkedIn
+ - SM: 0000-0002-3118-8945
 
 <details>
  <summary> Document Changelog</summary>
