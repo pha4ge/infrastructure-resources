@@ -30,8 +30,9 @@ ORCIDs? (good idea but probably depends on journal)
  - PVH: 0000-0001-6553-5274
  - KF: 0000-0002-8743-8579
  - SK: ??? - PvH emailed 22/4/2025
- - AU: ??? - PvH trying to contact via LinkedIn
+ - AU: 0000-0002-8547-4277
  - SM: 0000-0002-3118-8945
+ - JS: 0000-0003-0512-2827
 
 <details>
  <summary> Document Changelog</summary>
