@@ -231,3 +231,9 @@ Bioinformatics software is a diverse and continually evolving ecosystem of pipel
 One key element that effective compute infrastructure solutions have in common is that they provide a means for laboratory users to run containerised bioinformatic pipelines. This capability is now a minimum requirement for compute infrastructure in pathogen genomics labs, as it empowers them with increased tool portability (they can leverage the community’s ecosystem of tools already written in a standardised bioinformatic workflow language compatible with their infrastructure) and increased user accessibility (ease of use for non-computational users provides a far broader reach to more staff in more labs), ultimately allowing such labs to get new analyses up and running in days.
 
 Ultimately, the primary purpose of computing infrastructure is to manage data and facilitate bioinformatics analyses regularly performed by staff and researchers in pathogen genomics labs. This is not achieved by CPU cores and terabytes of storage alone, but requires the implementation of workflow execution engines, data management systems, system configuration, and the requisite human resources to maintain this infrastructure, with the end goal of ensuring that their laboratory users are able to effectively manage and analyse their genomic data.
+
+## Funding
+
+This work is supported by the Public Health Alliance for Genetic Epidemiology (PHA4GE), made possible by funding from the Gates Foundation (investment number 003655). The views in this paper do not necessarily reflect the views of the funders.
+
+This work is supported by co-funding from the European Union’s EU4Health programme under Grant Agreement Nr 101102774. Views and opinions expressed do not necessarily reflect those of the European Union or HaDEA. Neither the European Union nor the granting authority can be held responsible for them.
