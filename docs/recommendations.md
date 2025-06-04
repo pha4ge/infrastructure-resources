@@ -1,7 +1,3 @@
-# Framework for Compute Infrastructure for Pathogen Genomics Labs
-
-alternative title:
-
 # Considerations for Compute Infrastructure for Pathogen Sequence Analysis
 
 **PHA4GE Infrastructure Working Group**
