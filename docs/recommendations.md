@@ -15,48 +15,11 @@ Affiliations:
 1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada;
 1. [JS] Theiagen Genomics, USA;
 1. [KF] Wisconsin State Laboratory of Hygiene, Madison, WI, USA;
-1. [AU –- update - now at Broken String Biosciences] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
+1. [AU] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
 1. [TRC] Public Health Wales NHS Trust, 2 Capital Quarter, Tyndall St, Cardiff CF10 4BZ and University of Cardiff, Sir Martin Evans Building, Museum Avenue, Cardiff, CF10 3AX;
 1. [SM] Computational Biology Division, Department of Integrative Biomedical Sciences, Institute of Infectious Disease and Molecular Medicine, University of Cape Town, Cape Town, South Africa;
 1. [PvH] South African Medical Research Council Bioinformatics Unit, South African National Bioinformatics Institute, University of the Western Cape, Bellville, South Africa;
 1. [DP] Infectious Disease and Microbiome Program, Broad Institute of MIT and Harvard, MA, USA;
-
-ORCIDs? (good idea but probably depends on journal)
- - KL: 0000-0003-1329-9032
- - KN: 0000-0002-2679-8845
- - TRC: 0000-0003-2394-6504
- - NFA: 0000-0002-1243-0767
- - DP: 0000-0001-7226-7781
- - PVH: 0000-0001-6553-5274
- - KF: 0000-0002-8743-8579
- - SK: 0009-0004-9710-9121
- - AU: 0000-0002-8547-4277
- - SM: 0000-0002-3118-8945
- - JS: 0000-0003-0512-2827
-
-<details>
- <summary> Document Changelog</summary>
-- 2025-04-01:
-    - DP & KN complete first draft
-- 2024-12-19:
-    - DP & KN work session
-- 2024-12-13:
-    - DP & KN work session. python notebook and data moved to github.
-- 2024-11-20:
-    - DP & KN work session
-- 2024-11-13:
-    - DP & KN work session
-- 2024-01-30:
-    - Move to github MD from gdoc
-- 2024-04-12:
-    - DP & KN more work and formatting
-- 2024-07-03:
-    - DP & KN more work and clean up and restructuring
-- 2024-07-10:
-    - DP & KN more work and clean up
-- 2024-07-17:
-    - DP & KN more work and clean up and restructuring and filling out
-</details>
 
 ## Abstract
 
