@@ -128,11 +128,11 @@ To illustrate how different questions (who, what, where) may be answered, we des
 
 | Lab | Infrastructure | Where | Scope | How | Data sharing | ID & Auth |
 | --- | --- | --- | --- | --- | --- | --- |
-| INRB (DRCongo) | Laptop / field bioinformatics | Laptop | IaaS | ARTIC/Python | Local | Local to laptop |
-| SANBI, UWC (S. Africa) | On prem HPC | HPC | IaaS | Nextflow & Galaxy | via HPC sysadmins | FreeIPA directory server |
+| INRB (DRCongo) | Laptop /<br>field bioinformatics | Laptop | IaaS | ARTIC/Python | Local | Local to laptop |
+| SANBI, UWC (S. Africa) | On prem HPC | HPC | IaaS | Nextflow & Galaxy | via HPC sysadmins | FreeIPA<br>directory server |
 | U. Ibadan (Nigeria) | Seqera Tower | Cloud | PaaS | Nextflow | via Amazon S3 | Amazon IAM |
-| US PHLs w/Theiagen | Terra | Cloud | PaaS | WDL | via Terra workspaces | Google or Microsoft oauth |
-| GenomeTrakr labs (FDA CFSAN, etc) | GalaxyTrakr | Cloud | PaaS | Galaxy | via Galaxy histories | GalaxyTrakr server login |
+| US PHLs w/Theiagen | Terra | Cloud | PaaS | WDL | via Terra workspaces | Google or<br>Microsoft oauth |
+| GenomeTrakr labs (FDA CFSAN, etc) | GalaxyTrakr | Cloud | PaaS | Galaxy | via Galaxy histories | GalaxyTrakr<br>server login |
 | NVI (Norway) | IRIDA | HPC | SaaS | Galaxy | via IRIDA project | IRIDA server login |
 
 **Table 1:** Bioinformatics infrastructure from surveyed labs.
