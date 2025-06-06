@@ -45,7 +45,7 @@ Developing computing infrastructure depends on a number of considerations, many 
 [^Parkhill2010]: Parkhill J, Birney E, Kersey P. Genomic information infrastructure after the deluge. Genome Biol. 2010. Available: http://genomebiology.com/content/11/7/402
 [^Raza2016]: Raza S, Luheshi L. Big data or bust: realizing the microbial genomics revolution. Microb Genom. 2016;2: e000046. https://doi.org/10.1099/mgen.0.000046
 
-These factors are described from the perspective of a reasonably seasoned systems administrator (here, the 'admins user', as opposed to the end user, the more biologically inclined biologist. 
+These factors are described from the perspective of a reasonably seasoned systems administrator (here, the 'admins user', as opposed to the end user, the more biologically inclined analyst. 
 
   **How much does the infrastructure try and solve:** which parts of the pathogen bioinformatics analysis solution do you want to be responsible for?
 
