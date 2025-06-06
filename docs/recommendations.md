@@ -55,7 +55,7 @@ These factors are described from the perspective of a reasonably seasoned system
 
   **How data flows:** Where data comes from, where it is stored during analysis and where it goes. This includes how data is archived and presented (via dashboards, reporting, etc).
 
-  **Who has access:** This encompasses identity and access management, and includes how users are authenticated and authorised to access data. This can be managed by associating users with organisations, projects, and roles. Common defined roles include end users and those with elevated permissions to assist with administration and support.
+  **Who has access:** This encompasses identity and access management, and includes how users are authenticated and authorised to access data. This can be managed by associating users with organisations, projects, and roles. Commonly defined roles include end users and those with elevated permissions to assist with administration and support.
 
 It should however be noted that many implementations are motivated by institutionally-specific factors outside of these five considerations. Not infrequently an organization will for instance have to decide if they will set up an entirely new infrastructure to handle their needs, or if a pre-existing infrastructure will be used. There might be strong incentives or even rules that dictate that pre-existing solutions should be used. However, how this infrastructure will scale and how future-proof that solution will be (regarding sample volume, finances, regulatory issues, etc) should be taken into account. In such a situation, it is advisable to evaluate and describe the appropriateness of this solution before committing to it, to avoid any potential sunk cost fallacy situations.
 
