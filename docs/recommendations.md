@@ -150,7 +150,7 @@ To evaluate the systems, members of the PHA4GE consortium were asked to score ea
 
 The choices made for each of the five factors mentioned will determine what features the resulting system will have. For instance, the choice of workflow management will affect "Future proofing" since the choices made will affect to what extent workflows can be added (or extended) to meet future requirements. Similarly, it will affect "Ease of use (for administrators)", since it will affect how easy it will be to deploy new workflows. **Table 2** shows to what extent we believe that a factor will is affected by the choices made for the different factors. 
 
-https://github.com/pha4ge/infrastructure-resources/blob/main/docs/figures/datainfra_impactoffeaturechoices.png
+<img width="90%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/blob/main/docs/figures/datainfra_impactoffeaturechoices.png">
 
 
 | Factor | Where | Scope | How | Data sharing | ID & Auth |
