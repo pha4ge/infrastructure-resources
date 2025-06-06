@@ -141,7 +141,7 @@ To evaluate the systems, members of the PHA4GE consortium were asked to score ea
 
 - **Future proofing** - how easy it is to add workflows or functionality that are new, bespoke, or customised
 - **Ease of use (for administrator)** - level of effort required for the lab/group's administrative or technical lead to deploy and maintain this infrastructure
-- **Ease of use (for user)** - accessibility of infrastructure to analysts / end users in the group
+- **Ease of use (for user)** - accessibility of infrastructure to analysts/end users in the group
 - **Data provenance and management** - how much native support the infrastructure provides for data management, provenance tracking of analytic outputs, data audit/change logs, tool manifests & version logging for analyses, etc
 - **Access control** - maturity level of identity and access management, ability to integrate with commonly used institutional IAM solutions
 - **External access requirements** - external network connectivity requirements (speed and reliability) to use this infrastructure effectively
