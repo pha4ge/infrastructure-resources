@@ -99,7 +99,7 @@ Ultimately, the choices made here directly impact the ecosystem of easily availa
 
 ### Where the analysis is run: Physical location of computing
 
-Infrastructural solutions may employ end-user hardware, shared on premises / collaborator hardware, commercially rented cloud hardware, or a mix of all three. Ultimately, a lab's choices may be constrained or incentivized by extrinsic factors, such as the other four questions posed in this section, the resources or regulations associated with your institution, government, or collaborative consortium, scalability or sustainability concerns, or your projected future use cases. Legal regulation on the geolocality of data or compute are not uncommon. GDPR or country-specific regulations may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are able to address such requirements.
+Infrastructural solutions may employ end-user hardware, shared on premises/collaborator hardware, commercially rented cloud hardware, or a mix of all three. Ultimately, a lab's choices may be constrained or incentivized by extrinsic factors, such as the other four questions posed in this section, the resources or regulations associated with your institution, government, or collaborative consortium, scalability or sustainability concerns, or your projected future use cases. Legal regulation on the geolocality of data or compute are not uncommon. GDPR or country-specific regulations may require placing geographic constraints on the physical infrastructure and/or pursuing solutions with vendors that are able to address such requirements.
 
 
 ### How data flows: Managing data flow
