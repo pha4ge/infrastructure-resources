@@ -5,17 +5,17 @@
 Authors: Karin Lagesen, Kim Lee Ng, Nabil-Fareed Alikhan, Soyean Kim, Joel Sevinsky, Kelsey Florek, Anthony Underwood, Thomas R Connor, Suresh Maslamoney, Peter van Heusden, Daniel Park
 
 Affiliations:
-1. [KL] Norwegian Veterinary Institute, Ås, Norway;
-1. [KN] Bioinformatics and Sequencing, Statens Serum Institut, Copenhagen, Denmark;
-1. [NFA] Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, UK;
-1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada;
-1. [JS] Theiagen Genomics, USA;
-1. [KF] Wisconsin State Laboratory of Hygiene, Madison, WI, USA;
-1. [AU] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK;
-1. [TRC] Public Health Wales NHS Trust, 2 Capital Quarter, Tyndall St, Cardiff CF10 4BZ and University of Cardiff, Sir Martin Evans Building, Museum Avenue, Cardiff, CF10 3AX;
-1. [SM] Computational Biology Division, Department of Integrative Biomedical Sciences, Institute of Infectious Disease and Molecular Medicine, University of Cape Town, Cape Town, South Africa;
-1. [PvH] South African Medical Research Council Bioinformatics Unit, South African National Bioinformatics Institute, University of the Western Cape, Bellville, South Africa;
-1. [DP] Infectious Disease and Microbiome Program, Broad Institute of MIT and Harvard, MA, USA;
+1. [KL] Norwegian Veterinary Institute, Ås, Norway; <br>
+1. [KN] Bioinformatics and Sequencing, Statens Serum Institut, Copenhagen, Denmark; <br>
+1. [NFA] Centre for Genomic Pathogen Surveillance, Pandemic Sciences Institute, University of Oxford, UK; <br>
+1. [SK] Faculty of Health Sciences, Simon Fraser University, Canada; <br>
+1. [JS] Theiagen Genomics, USA; <br>
+1. [KF] Wisconsin State Laboratory of Hygiene, Madison, WI, USA; <br>
+1. [AU] Centre for Genomic Pathogen Surveillance, Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Medicine, University of Oxford, UK; <br>
+1. [TRC] Public Health Wales NHS Trust, 2 Capital Quarter, Tyndall St, Cardiff CF10 4BZ and University of Cardiff, Sir Martin Evans Building, Museum Avenue, Cardiff, CF10 3AX, UK; <br>
+1. [SM] Computational Biology Division, Department of Integrative Biomedical Sciences, Institute of Infectious Disease and Molecular Medicine, University of Cape Town, Cape Town, South Africa; <br>
+1. [PvH] South African Medical Research Council Bioinformatics Unit, South African National Bioinformatics Institute, University of the Western Cape, Bellville, South Africa; <br>
+1. [DP] Infectious Disease and Microbiome Program, Broad Institute of MIT and Harvard, MA, USA; <br>
 
 ## Abstract
 
