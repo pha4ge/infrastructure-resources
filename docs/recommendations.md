@@ -157,7 +157,7 @@ The choices made for each of the five factors mentioned will determine what feat
 
 The survey's raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)). A summary of the results is depicted in **Figure 3**.
 
-<img width="90%" alt="image" src="figures/pha4ge_spiderplot.png">
+![pha4ge_spiderplot](https://github.com/user-attachments/assets/78a9b3e7-2ff9-4c37-b73e-1a02585f0c64)
 
 **Figure 3:** Comparison of six real world bioinformatics infrastructure scored across eight key dimensions or features. Each feature plotted here is an average of the scores of the survey questions that comprise that feature (see notebook code for details).
 
