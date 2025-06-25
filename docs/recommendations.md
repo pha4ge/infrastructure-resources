@@ -68,10 +68,8 @@ There are a multitude of options for bioinformatic computing infrastructure depl
  - **Infrastructure as a Service (IaaS)** - User brings data, pipelines, operating system around pipeline execution and management software. While IaaS is often associated with cloud-hosted virtual machines, we are using the term here to describe all configurations that are fully configured by the user.
 
 Note that the abstraction level is independent of where the physical location of the compute resources are.
+
 ![](figures/Figure1.png)
-
-
-![service-diagram-20211116-dp](https://github.com/pha4ge/infrastructure-resources/assets/8513746/d0c66464-28ba-4467-8f20-b0a39cc65d5c)
 **Figure 1: Scope of Responsibility** - the scope of what different solutions attempt to solve for the users and admins. All infrastructure components (bottom of figure) need to be addressed by some combination of the end-user, system admins, or an external party. The degree to which responsibility can be deferred to a third party depends on the solution chosen. For example, on the IaaS level, a research group will also need to provide their own solution for orchestrating infrastructure (including software installation, selecting and installing a pipeline executor and installing pipelines), which would be solved via SaaS. Thus, selecting a lower level of abstraction introduces additional flexibility with the burden of additional complexity for people involved in the solution.
 
 
@@ -94,8 +92,7 @@ Workflow execution software (such as the Nextflow runner) or platforms (such as 
 
 Ultimately, the choices made here directly impact the ecosystem of easily available bioinformatic pipelines readily available to end users.
 
-<img width="60%" alt="image" src="https://github.com/pha4ge/infrastructure-resources/assets/8513746/dd54673d-685c-4e11-a8fd-14f992e39226">
-
+![](figures/FigureParts.png)
 **Figure 2: Description of physical infrastructure and capabilities of each solution.** A) The extent of portability to other platforms beyond the initial development environment. B) Additional features natively supported by each physical infrastructure. 
 
 
@@ -152,15 +149,13 @@ To evaluate the systems, members of the PHA4GE consortium were asked to score ea
 
 The choices made for each of the five factors mentioned will determine what features the resulting system will have. For instance, the choice of workflow management will affect "Future proofing" since the choices made will affect to what extent workflows can be added (or extended) to meet future requirements. Similarly, it will affect "Ease of use (for administrators)", since it will affect how easy it will be to deploy new workflows. **Table 2** shows to what extent we believe that a factor will is affected by the choices made for the different factors. 
 
-
-![datainfra_impactoffeaturechoices](https://github.com/user-attachments/assets/01e44b1e-d2df-4f04-a33d-f5630c2f01f3)
+![](figures/datainfra_impactoffeaturechoices.png)
 
 **Table 2:** Overview over to what extent a feature is affected by the choices made for each of the five features. Range: L - low, M - medium, H - High. 
 
 The survey's raw data, methods, and analyses are accessible in a public python notebook (notebook [code](recommendations-data/infra_recs_analyses.ipynb), [notebook](https://colab.research.google.com/github/pha4ge/infrastructure-resources/blob/main/docs/recommendations-data/infra_recs_analyses.ipynb), [raw data](recommendations-data/survey-data.tsv)). A summary of the results is depicted in **Figure 3**.
 
-![pha4ge_spiderplot](https://github.com/user-attachments/assets/78a9b3e7-2ff9-4c37-b73e-1a02585f0c64)
-
+![](figures/pha4ge_spiderplot.png)
 **Figure 3:** Comparison of six real world bioinformatics infrastructure scored across eight key dimensions or features. Each feature plotted here is an average of the scores of the survey questions that comprise that feature (see notebook code for details).
 
 The six real world implementations described in **Table 1**, and evaluated in **Figure 3**, represent a wide range of strategies to facilitate genomic data analysis in different public health labs. Here, we observe some general commonalities and differences in their effectiveness and prioritized needs.
