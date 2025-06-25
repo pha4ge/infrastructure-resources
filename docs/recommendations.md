@@ -68,6 +68,8 @@ There are a multitude of options for bioinformatic computing infrastructure depl
  - **Infrastructure as a Service (IaaS)** - User brings data, pipelines, operating system around pipeline execution and management software. While IaaS is often associated with cloud-hosted virtual machines, we are using the term here to describe all configurations that are fully configured by the user.
 
 Note that the abstraction level is independent of where the physical location of the compute resources are.
+![](figures/Figure1.png)
+
 
 ![service-diagram-20211116-dp](https://github.com/pha4ge/infrastructure-resources/assets/8513746/d0c66464-28ba-4467-8f20-b0a39cc65d5c)
 **Figure 1: Scope of Responsibility** - the scope of what different solutions attempt to solve for the users and admins. All infrastructure components (bottom of figure) need to be addressed by some combination of the end-user, system admins, or an external party. The degree to which responsibility can be deferred to a third party depends on the solution chosen. For example, on the IaaS level, a research group will also need to provide their own solution for orchestrating infrastructure (including software installation, selecting and installing a pipeline executor and installing pipelines), which would be solved via SaaS. Thus, selecting a lower level of abstraction introduces additional flexibility with the burden of additional complexity for people involved in the solution.
