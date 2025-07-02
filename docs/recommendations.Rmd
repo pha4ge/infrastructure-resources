@@ -7,8 +7,7 @@ bibliography: references.bib
 csl: vancouver-superscript.csl         # Optional: use your preferred CSL file for citation style
 ---
 
-# Considerations for Compute Infrastructure for Pathogen Sequence Analysis
-
+#
 **PHA4GE Infrastructure Working Group**
 
 Authors: Karin Lagesen, Kim Lee Ng, Nabil-Fareed Alikhan, Soyean Kim, Joel Sevinsky, Kelsey Florek, Anthony Underwood, Thomas R Connor, Suresh Maslamoney, Peter van Heusden, Daniel Park
