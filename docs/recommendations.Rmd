@@ -25,6 +25,8 @@ Affiliations:
 [PvH] South African Medical Research Council Bioinformatics Unit, South African National Bioinformatics Institute, University of the Western Cape, Bellville, South Africa  
 [DP] Infectious Disease and Microbiome Program, Broad Institute of MIT and Harvard, MA, USA  
 
+Corresponding author: Karin Lagesen (karin.lagesen@vetinst.no)
+
 ## Abstract
 
 With climate change, habitat disruptions, an increase of antibiotic resistance and other anthropogenic and natural factors, combating infections both in humans and animals is again coming to the forefront. Sequencing technology has become an increasingly important part of the toolkit to track and characterise pathogens, and the use of pathogen genomic data in public health is growing. However, sequencing technologies have the potential to generate significant volumes of data, and this requires data management, analysis methods and interpretation tools that might be unfamiliar for the institutions tasked with this work. Here, the PHA4GE Infrastructure working group, consisting of practising bioinformaticians from both academia and healthcare/public health, present a set of recommendations on how institutions can manage this new technology in order to get full use of the data. These recommendations cover aspects including infrastructure, data management, analysis workflow tools and user management. With these recommendations, the working group aims to provide institutions and working bioinformaticians with a set of best practice guidelines to guide decision making around computational environments used to employ sequencing data to combat disease.
